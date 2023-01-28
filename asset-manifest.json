@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Research_Platform/static/css/main.9912d48f.css",
-    "main.js": "/Research_Platform/static/js/main.97f299f7.js",
+    "main.css": "/Research_Platform/static/css/main.4a8d1432.css",
+    "main.js": "/Research_Platform/static/js/main.665ad638.js",
     "static/js/787.28cb0dcd.chunk.js": "/Research_Platform/static/js/787.28cb0dcd.chunk.js",
     "static/media/wallstreet_2.jpg": "/Research_Platform/static/media/wallstreet_2.dc6aa5fc370cd99b392e.jpg",
     "static/media/wallstreet_1.jpg": "/Research_Platform/static/media/wallstreet_1.eb625b4703a8581982b4.jpg",
     "static/media/stock_analyzerWhite.png": "/Research_Platform/static/media/stock_analyzerWhite.7c7a129445edb95a1bc6.png",
     "index.html": "/Research_Platform/index.html",
-    "main.9912d48f.css.map": "/Research_Platform/static/css/main.9912d48f.css.map",
-    "main.97f299f7.js.map": "/Research_Platform/static/js/main.97f299f7.js.map",
+    "main.4a8d1432.css.map": "/Research_Platform/static/css/main.4a8d1432.css.map",
+    "main.665ad638.js.map": "/Research_Platform/static/js/main.665ad638.js.map",
     "787.28cb0dcd.chunk.js.map": "/Research_Platform/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9912d48f.css",
-    "static/js/main.97f299f7.js"
+    "static/css/main.4a8d1432.css",
+    "static/js/main.665ad638.js"
   ]
 }
