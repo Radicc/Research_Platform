@@ -15,6 +15,7 @@
   filter: hue-rotate(0deg);
   border: 2px solid #ffd700;
   transition: all 0.1s linear;
+  cursor: pointer;
 
   &:hover {
     border: 1px solid transparent;
@@ -28,7 +29,7 @@
         left: 0;
         width: 100%;
         height: 3px;
-        background: linear-gradient(90deg, transparent, #3a86ff);
+        background: linear-gradient(90deg, transparent, #ffd700);
         animation: animate1 1s linear infinite;
       }
       @keyframes animate1 {
@@ -47,7 +48,7 @@
         right: 0;
         width: 3px;
         height: 100%;
-        background: linear-gradient(180deg, transparent, #3a86ff);
+        background: linear-gradient(180deg, transparent, #ffd700);
         animation: animate2 1s linear infinite;
         animation-delay: 0.25s;
       }
@@ -67,7 +68,7 @@
         right: 0;
         width: 100%;
 
-        background: linear-gradient(270deg, transparent, #3a86ff);
+        background: linear-gradient(270deg, transparent, #ffd700);
         animation: animate3 1s linear infinite;
         animation-delay: 0.5s;
       }
@@ -89,7 +90,7 @@
         left: 0;
         width: 3px;
         height: 100%;
-        background: linear-gradient(360deg, transparent, #3a86ff);
+        background: linear-gradient(360deg, transparent, #ffd700);
         animation: animate4 1s linear infinite;
         animation-delay: 0.75s;
       }

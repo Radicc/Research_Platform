@@ -48,13 +48,11 @@ export default function Navbar() {
               <span className="circle">
                 <img src={stocks} />
               </span>
-              <h1>STOCKS</h1>
             </NavLink>
             <NavLink to="/Study" onClick={handleClick} className="container">
               <span className="circle">
                 <img src={study} />
               </span>
-              <h1>STUDY</h1>
             </NavLink>
 
             <NavLink
@@ -65,7 +63,6 @@ export default function Navbar() {
               <span className="circle">
                 <img src={stockAnalyzer} />
               </span>
-              <h1>STOCK ANALYZER</h1>
             </NavLink>
 
             <NavLink
@@ -76,7 +73,6 @@ export default function Navbar() {
               <span className="circle">
                 <img src={calculatorOldMan} />
               </span>
-              <h1>RETIRMENT CALCULATOR</h1>
             </NavLink>
           </div>
         </div>

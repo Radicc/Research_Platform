@@ -25,13 +25,15 @@ export default function RetirmentCalculator() {
         <div className="inputContainer2">
           <input placeholder="What % of your income do you want to have in retirement?" />
         </div>
-        <button type="submit" className="calculateButton">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Calculate
-        </button>
+        <div className="buttonContainer">
+          <button type="submit" className="calculateButton">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Calculate
+          </button>
+        </div>
       </div>
     </div>
   );
