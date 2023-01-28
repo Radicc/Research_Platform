@@ -11,7 +11,7 @@ const RouteSwitch = () => {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/Research_Platform" element={<Home />} />
         <Route path="/RetirmentCalculator" element={<RetirmentCalculator />} />
         <Route path="/Stocks" element={<Stocks />} />
         <Route path="/StocksAnalyzer" element={<StocksAnalyzer />} />

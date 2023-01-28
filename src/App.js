@@ -1,6 +1,4 @@
 import "./App.scss";
-
-import Home from "./Home/Home";
 import RouteSwitch from "./RouteSwitch";
 
 function App() {
