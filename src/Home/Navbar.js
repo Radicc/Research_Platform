@@ -8,6 +8,8 @@ import stockAnalyzer from "./images/stock_analyzerWhite.png";
 import stocks from "./images/stocksWhite.png";
 import study from "./images/studyWhite.png";
 import calculatorOldMan from "./images/calculatorOldManWhite.png";
+import heartSVG from "./images/heartSVG.png";
+import homeSVG from "./images/homeSVG.png";
 
 export default function Navbar() {
   const [Active, IsActive] = useState("off");
@@ -32,6 +34,7 @@ export default function Navbar() {
   return (
     <div className="header">
       <div className={backBurger}>
+        <img className="iconSVG" src={homeSVG} />
         <div onClick={handleClick} id="nav-icon2" className={Burger}>
           <span></span>
           <span></span>
@@ -40,7 +43,9 @@ export default function Navbar() {
           <span></span>
           <span></span>
         </div>
+        <img className="iconSVG" src={heartSVG} />
       </div>
+
       <div className={Style}>
         <div className="containerNav">
           <div className="menu">
