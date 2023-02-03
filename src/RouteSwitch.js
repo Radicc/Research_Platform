@@ -5,6 +5,7 @@ import StocksAnalyzer from "./Home/StocksAnalyzer/StocksAnalyzer";
 import RetirmentCalculator from "./Home/RetirmentCalculator/RetirmentCalculator";
 import Home from "./Home/Home";
 import Navbar from "./Home/Navbar";
+import FavoriteStocks from "./Home/FavoriteStocks/FavoriteStocks";
 
 const RouteSwitch = () => {
   return (
@@ -16,6 +17,7 @@ const RouteSwitch = () => {
         <Route path="/Stocks" element={<Stocks />} />
         <Route path="/StocksAnalyzer" element={<StocksAnalyzer />} />
         <Route path="/Study" element={<Study />} />
+        <Route path="/FavoriteStocks" element={<FavoriteStocks />} />
       </Routes>
     </Router>
   );

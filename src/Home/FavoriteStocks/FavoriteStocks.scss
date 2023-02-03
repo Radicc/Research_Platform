@@ -1,0 +1,17 @@
+.FavoriteStocks {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  h1 {
+    position: relative;
+    color: whitesmoke;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    top: 10vh;
+  }
+}

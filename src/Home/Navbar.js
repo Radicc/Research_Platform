@@ -34,7 +34,10 @@ export default function Navbar() {
   return (
     <div className="header">
       <div className={backBurger}>
-        <img className="iconSVG" src={homeSVG} />
+        <NavLink to="/Research_Platform">
+          <img className="iconSVG" src={homeSVG} />
+        </NavLink>
+
         <div onClick={handleClick} id="nav-icon2" className={Burger}>
           <span></span>
           <span></span>
@@ -43,19 +46,21 @@ export default function Navbar() {
           <span></span>
           <span></span>
         </div>
-        <img className="iconSVG" src={heartSVG} />
+        <NavLink to="/FavoriteStocks">
+          <img className="iconSVG" src={heartSVG} />
+        </NavLink>
       </div>
 
       <div className={Style}>
         <div className="containerNav">
           <div className="menu">
             <NavLink to="/Stocks" onClick={handleClick} className="container">
-              <span className="circle">
+              <span className="circleUnactive">
                 <img src={stocks} />
               </span>
             </NavLink>
             <NavLink to="/Study" onClick={handleClick} className="container">
-              <span className="circle">
+              <span className="circleUnactive">
                 <img src={study} />
               </span>
             </NavLink>
@@ -65,7 +70,7 @@ export default function Navbar() {
               onClick={handleClick}
               className="container"
             >
-              <span className="circle">
+              <span className="circleUnactive">
                 <img src={stockAnalyzer} />
               </span>
             </NavLink>

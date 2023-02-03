@@ -148,6 +148,26 @@
     animation: menuContentAni 1s ease forwards;
   }
 }
+.circleUnactive {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  opacity: 1;
+  background-color: none;
+  border-radius: 50%;
+  border: 0.2em solid whitesmoke;
+  animation: menuContentAni 1s ease forwards;
+  opacity: 0.5;
+  img {
+    opacity: 0.8;
+    position: relative;
+    object-fit: cover;
+    width: 65%;
+  }
+}
 .circle {
   position: relative;
   display: flex;
