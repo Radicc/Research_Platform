@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/Research_Platform/static/css/main.156a8d96.css",
-    "main.js": "/Research_Platform/static/js/main.9f93606a.js",
+    "main.css": "/Research_Platform/static/css/main.5839488e.css",
+    "main.js": "/Research_Platform/static/js/main.23cd30ba.js",
     "static/js/787.28cb0dcd.chunk.js": "/Research_Platform/static/js/787.28cb0dcd.chunk.js",
-    "static/media/wallstreet_2.jpg": "/Research_Platform/static/media/wallstreet_2.dc6aa5fc370cd99b392e.jpg",
+    "static/media/wallstreet_3.jpg": "/Research_Platform/static/media/wallstreet_3.6fc96f5f9972fbfcca3d.jpg",
     "static/media/wallstreet_1.jpg": "/Research_Platform/static/media/wallstreet_1.eb625b4703a8581982b4.jpg",
+    "static/media/wallstreet_2_1.jpg": "/Research_Platform/static/media/wallstreet_2_1.2fbd53b84086c17d4c7a.jpg",
+    "static/media/background2.jpg": "/Research_Platform/static/media/background2.088cb63cc481aa6fdb77.jpg",
     "static/media/stock_analyzerWhite.png": "/Research_Platform/static/media/stock_analyzerWhite.7c7a129445edb95a1bc6.png",
     "static/media/heartSVG.png": "/Research_Platform/static/media/heartSVG.f0a6949edaab2c39b5ed.png",
     "index.html": "/Research_Platform/index.html",
-    "main.156a8d96.css.map": "/Research_Platform/static/css/main.156a8d96.css.map",
-    "main.9f93606a.js.map": "/Research_Platform/static/js/main.9f93606a.js.map",
+    "main.5839488e.css.map": "/Research_Platform/static/css/main.5839488e.css.map",
+    "main.23cd30ba.js.map": "/Research_Platform/static/js/main.23cd30ba.js.map",
     "787.28cb0dcd.chunk.js.map": "/Research_Platform/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.156a8d96.css",
-    "static/js/main.9f93606a.js"
+    "static/css/main.5839488e.css",
+    "static/js/main.23cd30ba.js"
   ]
 }
