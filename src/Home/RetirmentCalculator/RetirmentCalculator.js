@@ -25,6 +25,7 @@ export default function RetirmentCalculator() {
     RetirementIncome: 0,
   };
   const [genState, setState] = useState(defaultForm);
+  const [color, setColor] = useState("");
 
   const handleInput = (e) => {
     setState((prev) => ({
@@ -111,17 +112,21 @@ export default function RetirmentCalculator() {
     endBalance = Number(number1);
 
     for (let i = 0; i < yearsToDeath; i++) {
-      endBalance -= RetirmentIncome;
+      endBalance -= Math.round(
+        Number((RetirmentIncome / 100) * genState.IncomeInRetirement)
+      );
     }
 
     if (endBalance < 0) {
       EndNumber.push(endBalance);
       EndNumber.push("NO");
+      setColor("colorRed");
     } else {
       EndNumber.push(endBalance);
       EndNumber.push("YES");
+      setColor("colorGreen");
     }
-
+    console.log(color);
     return EndNumber;
   };
 
@@ -201,14 +206,6 @@ export default function RetirmentCalculator() {
                 onChange={handleInput}
               />
             </div>
-            <div className="inputBlock">
-              <p>Annualized Returns During Retirement</p>
-              <input
-                placeholder="0%"
-                name="AnnualizedReturnsRetirement"
-                onChange={handleInput}
-              />
-            </div>
 
             <div className="inputBlock">
               <p>What Age Do You Expect To Live To?</p>
@@ -228,16 +225,14 @@ export default function RetirmentCalculator() {
                 onChange={handleInput}
               />
             </div>
-          </div>
-        </div>
-        <div className="inputContainer2">
-          <div className="inputBlock">
-            <p>What % of your income do you want to have in retirement?</p>
-            <input
-              placeholder="0%"
-              name="IncomeInRetirement"
-              onChange={handleInput}
-            />
+            <div className="inputBlock">
+              <p>What % of your income do you want to have in retirement?</p>
+              <input
+                placeholder="0%"
+                name="IncomeInRetirement"
+                onChange={handleInput}
+              />
+            </div>
           </div>
         </div>
         <div className="buttonContainer">
@@ -255,29 +250,33 @@ export default function RetirmentCalculator() {
         </div>
       </div>
       <div className="submitSolution">
-        <div className="containerSolution">
-          <h2>RETIREMENT?</h2>
-          <p>{genState.Enough}</p>
+        <div className="solution">
+          <div className="containerSolution">
+            <h2>RETIREMENT?</h2>
+            <p className={color}>{genState.Enough}</p>
+          </div>
+          <div className="containerSolution">
+            <h2>GROWTH</h2>
+            <p>$ {genState.Growth}</p>
+          </div>
+          <div className="containerSolution">
+            <h2>SAVE</h2>
+            <p>$ {genState.Save}</p>
+          </div>
         </div>
-        <div className="containerSolution">
-          <h2>GROWTH</h2>
-          <p>$ {genState.Growth}</p>
-        </div>
-        <div className="containerSolution">
-          <h2>SAVE</h2>
-          <p>$ {genState.Save}</p>
-        </div>
-        <div className="containerSolution">
-          <h2>BALANCE {genState.RetirementAge}y.o</h2>
-          <p>$ {genState.Balance}</p>
-        </div>
-        <div className="containerSolution">
-          <h2>Retirement Income</h2>
-          <p>$ {genState.RetirementIncome}</p>
-        </div>
-        <div className="containerSolution">
-          <h2>BALANCE {genState.AgeOfDeath}y.o</h2>
-          <p>$ {genState.BalanceEnd}</p>
+        <div className="solution">
+          <div className="containerSolution">
+            <h2>BALANCE {genState.RetirementAge}y.o</h2>
+            <p>$ {genState.Balance}</p>
+          </div>
+          <div className="containerSolution">
+            <h2>Retirement Income</h2>
+            <p>$ {genState.RetirementIncome}</p>
+          </div>
+          <div className="containerSolution">
+            <h2>BALANCE {genState.AgeOfDeath}y.o</h2>
+            <p className={color}>$ {genState.BalanceEnd}</p>
+          </div>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ export default function FirstSection() {
   return (
     <div className="firstSection">
       <div className="titulContainer">
-        <h1>THE SUCCESSFUL PEOPLE ARE MADE NOT BORN</h1>
+        <h1>SUCCESS IN ANY FIELD OF LIFE IS NOT DUE TO INBORN TRAITS</h1>
       </div>
     </div>
   );

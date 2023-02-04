@@ -108,6 +108,7 @@
   justify-content: center;
   align-items: center;
   animation: menuAni 0.9s ease forwards;
+  gap: 8em;
 }
 
 @keyframes menuAni {
@@ -131,12 +132,12 @@
 .container {
   position: relative;
   display: flex;
-  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   cursor: default;
+
   top: 5vh;
 
   h1 {
@@ -161,6 +162,7 @@
   border: 0.2em solid whitesmoke;
   animation: menuContentAni 1s ease forwards;
   opacity: 0.5;
+
   img {
     opacity: 0.8;
     position: relative;
@@ -206,5 +208,187 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .iconSVG {
+    position: relative;
+    height: 38px;
+    top: 2vh;
+    cursor: pointer;
+    &:hover {
+      filter: drop-shadow(0 0 0.2rem #ffd700);
+    }
+  }
+  .headerContainerStart {
+    position: fixed;
+    display: inline-flex;
+    width: 25%;
+    height: 8dvh;
+    background-color: #4d5061;
+    box-shadow: 0px 3px #ffd700;
+    justify-content: center;
+
+    border-radius: 0 0 1.5em 1.5em;
+    z-index: 2;
+    gap: 7em;
+  }
+  .headerContainerUnActive {
+    position: fixed;
+    display: inline-flex;
+    width: 25%;
+    height: 9vh;
+    background-color: rgba(77, 80, 97, 0.84);
+    box-shadow: 0px 3px #ffd700;
+    justify-content: center;
+    border-radius: 0 0 1.5em 1.5em;
+    z-index: 2;
+    gap: 7em;
+    animation: ok 0.8s ease forwards;
+  }
+  @keyframes ok {
+    0% {
+      background-color: rgba(77, 80, 97, 0.84);
+      width: 100%;
+      height: 98vh;
+    }
+    40% {
+      width: 100%;
+      height: 9vh;
+    }
+
+    100% {
+      width: 25%;
+      height: 9vh;
+      background-color: rgba(77, 80, 97, 1);
+    }
+  }
+
+  .headerContainerActive {
+    position: fixed;
+    display: inline-flex;
+    width: 25%;
+    height: 9vh;
+    justify-content: center;
+    z-index: 2;
+    gap: 7em;
+  }
+  .pushMenuDown {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.25);
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 1;
+    animation: blackRoll 0.6s ease forwards;
+  }
+
+  .pushMenuHidden {
+    display: none;
+  }
+  .containerNav {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    order: 2;
+    justify-content: center;
+  }
+  .menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 10vh;
+    border-radius: 0 0 1.5em 1.5em;
+    background-color: #4d5061f5;
+    box-shadow: 0px 3px #ffd700;
+    justify-content: center;
+    align-items: center;
+    animation: menuAni 0.9s ease forwards;
+    gap: 2em;
+  }
+  @keyframes menuAni {
+    0% {
+      width: 25%;
+      height: 12vh;
+      background-color: rgba(77, 80, 97, 1);
+    }
+    40% {
+      width: 100%;
+      height: 12vh;
+    }
+    100% {
+      width: 100%;
+      height: 98vh;
+      background-color: rgba(77, 80, 97, 0.96);
+    }
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: default;
+    gap: 2em;
+  }
+  .circleUnactive {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+    background-color: none;
+    border-radius: 50%;
+    border: 0.2em solid whitesmoke;
+    animation: menuContentAni 1s ease forwards;
+    opacity: 0.5;
+
+    img {
+      opacity: 0.8;
+      position: relative;
+      object-fit: cover;
+      width: 65%;
+    }
+  }
+  .circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+    background-color: none;
+    border-radius: 50%;
+    border: 0.2em solid #ffd700;
+    animation: menuContentAni 1s ease forwards;
+    cursor: pointer;
+    &:hover {
+      filter: drop-shadow(0 0 0.1rem #ffd700);
+    }
+    img {
+      opacity: 0.8;
+      position: relative;
+      object-fit: cover;
+      width: 65%;
+    }
   }
 }
