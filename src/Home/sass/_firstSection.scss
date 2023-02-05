@@ -5,6 +5,19 @@
   height: 100vh;
   background-image: url("../images/wallstreet_3.jpg");
   background-size: cover;
+  opacity: 0;
+  animation: FadeIN 0.8s ease forwards;
+}
+@keyframes FadeIN {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .titulContainer {
@@ -14,7 +27,7 @@
   width: 100%;
   height: 100%;
 
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
   justify-content: center;
   align-items: center;
   text-align: center;
