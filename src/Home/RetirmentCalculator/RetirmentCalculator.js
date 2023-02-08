@@ -55,22 +55,13 @@ export default function RetirmentCalculator() {
     ////////////////////////////////GOOD///////////////////////////////////
     for (let i = genState.Age; i < genState.RetirementAge; i++) {
       growth = 0;
-      /*console.log(
-        `${Number(number0).toFixed(0)} +${Number(number1).toFixed(
-          0
-        )} = ${Number(number0 + number1).toFixed(0)}`
-      );
-*/
-      //console.log(`number0:${number0}`);
+
       NormalSaving += Math.round(
         Number(
           (genState.IncreaseOfAnnualSavings / 100) * AnnualSavings +
             Number(AnnualSavings)
         )
       );
-      //console.log(`number 0 : ${number0.toFixed(0)}`);
-
-      //console.log(`growth : ${growth.toFixed(0)}`);
 
       number1 = Math.round(
         Number(genState.AnnualizedReturns / 100) * number1 + number1
@@ -84,11 +75,9 @@ export default function RetirmentCalculator() {
       }
       console.log(`number 1 : ${number1}`);
       console.log(`AnnualSavings : ${AnnualSavings}`);
-      //console.log(`growth : ${growth.toFixed(0)}`);
     }
     EndNumber.push(Number(NormalSaving));
     EndNumber.push(Number(number1));
-
     EndNumber.push(Number(number1 - NormalSaving));
 
     for (let i = genState.Age; i < genState.AgeOfDeath; i++) {
@@ -108,7 +97,6 @@ export default function RetirmentCalculator() {
     ////////////////////////////////////////////////////////////
 
     yearsToDeath = Number(genState.AgeOfDeath - genState.RetirementAge);
-    //console.log(yearsToDeath);
     endBalance = Number(number1);
 
     for (let i = 0; i < yearsToDeath; i++) {
@@ -133,7 +121,6 @@ export default function RetirmentCalculator() {
   const handleSubmit = () => {
     let number = [];
     number.push(...handleBalance());
-    //console.log(`Number:${number}`);
     setState((prev) => ({
       ...prev,
       Save: number[0],

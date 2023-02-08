@@ -30,11 +30,19 @@ export default function Navbar() {
       setBackBurger("headerContainerUnActive");
     }
   };
+  const handleClickSVG = () => {
+    if (Active === "true") {
+      IsActive("off");
+      setStyle("pushMenuHidden");
+      setBurger("");
+      setBackBurger("headerContainerUnActive");
+    }
+  };
 
   return (
     <div className="header">
       <div className={backBurger}>
-        <NavLink to="/Research_Platform">
+        <NavLink onClick={handleClickSVG} to="/Research_Platform">
           <img className="iconSVG" src={homeSVG} />
         </NavLink>
 
@@ -46,7 +54,7 @@ export default function Navbar() {
           <span></span>
           <span></span>
         </div>
-        <NavLink to="/FavoriteStocks">
+        <NavLink onClick={handleClickSVG} to="/FavoriteStocks">
           <img className="iconSVG" src={heartSVG} />
         </NavLink>
       </div>
@@ -60,7 +68,7 @@ export default function Navbar() {
               </span>
             </NavLink>
             <NavLink to="/Study" onClick={handleClick} className="container">
-              <span className="circleUnactive">
+              <span className="circle">
                 <img src={study} />
               </span>
             </NavLink>
