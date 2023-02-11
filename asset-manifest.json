@@ -1,21 +1,27 @@
 {
   "files": {
-    "main.css": "/Research_Platform/static/css/main.0a0e6e4e.css",
-    "main.js": "/Research_Platform/static/js/main.44e11876.js",
+    "main.css": "/Research_Platform/static/css/main.d6bca452.css",
+    "main.js": "/Research_Platform/static/js/main.f901575b.js",
     "static/js/787.28cb0dcd.chunk.js": "/Research_Platform/static/js/787.28cb0dcd.chunk.js",
     "static/media/wallstreet_3.jpg": "/Research_Platform/static/media/wallstreet_3.6fc96f5f9972fbfcca3d.jpg",
     "static/media/wallstreet_1.jpg": "/Research_Platform/static/media/wallstreet_1.eb625b4703a8581982b4.jpg",
     "static/media/wallstreet_2_1.jpg": "/Research_Platform/static/media/wallstreet_2_1.2fbd53b84086c17d4c7a.jpg",
     "static/media/background2.jpg": "/Research_Platform/static/media/background2.088cb63cc481aa6fdb77.jpg",
+    "static/media/The_Richest_Man_In_Babylon.jpg": "/Research_Platform/static/media/The_Richest_Man_In_Babylon.d938bda262e230f0ba72.jpg",
+    "static/media/Richer_Wiser_Happier.jpeg": "/Research_Platform/static/media/Richer_Wiser_Happier.51f666b68af6f51a5c2a.jpeg",
+    "static/media/The_Intelligent_Investor.jpeg": "/Research_Platform/static/media/The_Intelligent_Investor.78c1e46432ac3f6b15f7.jpeg",
+    "static/media/Psychology_of_Money.jpg": "/Research_Platform/static/media/Psychology_of_Money.4691f412b6501b31ee81.jpg",
+    "static/media/One_Up_On_WallStreet.jpg": "/Research_Platform/static/media/One_Up_On_WallStreet.f0b08ddda71e8a4ee184.jpg",
     "static/media/stock_analyzerWhite.png": "/Research_Platform/static/media/stock_analyzerWhite.7c7a129445edb95a1bc6.png",
+    "static/media/Good_Stocks_Cheap.jpg": "/Research_Platform/static/media/Good_Stocks_Cheap.cc1be447869120640575.jpg",
     "static/media/heartSVG.png": "/Research_Platform/static/media/heartSVG.f0a6949edaab2c39b5ed.png",
     "index.html": "/Research_Platform/index.html",
-    "main.0a0e6e4e.css.map": "/Research_Platform/static/css/main.0a0e6e4e.css.map",
-    "main.44e11876.js.map": "/Research_Platform/static/js/main.44e11876.js.map",
+    "main.d6bca452.css.map": "/Research_Platform/static/css/main.d6bca452.css.map",
+    "main.f901575b.js.map": "/Research_Platform/static/js/main.f901575b.js.map",
     "787.28cb0dcd.chunk.js.map": "/Research_Platform/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a0e6e4e.css",
-    "static/js/main.44e11876.js"
+    "static/css/main.d6bca452.css",
+    "static/js/main.f901575b.js"
   ]
 }
