@@ -8,33 +8,45 @@ export default function Study() {
   const [Content, setContent] = useState("contentNone");
 
   const [propRef, setPropRef] = useState("");
-  const [contentBookFast, setContentBookFast] = useState("BookSection");
-  const contentDefault = "contentNone";
 
-  const containerSection = "containerSection selected";
-  const containerSectionNone = "containerSectionNone";
+  const contentBookDefault = "BookSection";
+  const contentBookFast = "BookSectionFast";
+  const contentNone = "contentNone"; /// DISPLAY NONE -> UI
 
-  const levelContainer = "levelContainer selected";
-  const levelContainerNone = "levelContainerNone";
+  const containerDefault = "containerSection"; //// DEFAULT STUDY BUTTON -> UI
+  const containerSection = "containerSection selected"; //// SELECTED STUDY BUTTON -> UI
+  const containerSectionNone = "containerSectionNone"; //// NOT SELECTED STUDY BUTTON -> UI
+
+  const levelContainerDefault = "levelContainer"; //// DEFAULT LEVEL BUTTON -> UI
+  const levelContainer = "levelContainer selected"; //// SELECTED LEVEL BUTTON -> UI
+  const levelContainerNone = "levelContainerNone"; //// NOT SELECTED LEVEL BUTTON -> UI
+
+  const defaultLevelMenu = {
+    ContentBook: contentBookDefault,
+
+    Beginner: levelContainerDefault, // Beginner Button Books
+    BeginnerElements: contentNone, // Beginner Content
+
+    Intermediate: levelContainerDefault, // Intermediate Button Books
+    IntermediateElements: contentNone,
+
+    Advanced: levelContainerDefault, // Advanced Button Books
+    AdvancedElements: contentNone,
+  };
+  const [levelMenu, setLevelMenu] = useState(defaultLevelMenu);
 
   const defaultMenu = {
-    Books: "containerSection",
-    Youtube: "containerSection",
-    Websites: "containerSection",
-    ContentBooks: "contentNone",
-    ContentYoutube: "contentNone",
-    ContentWebsites: "contentNone",
+    Books: containerDefault,
+    Youtube: containerDefault,
+    Websites: containerDefault,
 
-    Beginner: "levelContainer", // Beginner Button Books
-    BeginnerElements: contentDefault, // Beginner Content
-
-    Intermediate: "levelContainer", // Intermediate Button Books
-    IntermediateElements: contentDefault,
-
-    Advanced: "levelContainer", // Advanced Button Books
-    AdvancedElements: contentDefault,
+    ContentBooks: contentNone,
+    ContentYoutube: contentNone,
+    ContentWebsites: contentNone,
   };
   const [menuScale, setMenutScale] = useState(defaultMenu);
+
+  //////////////// BEGINNER, INTERMEDIATE, ADVANCED ////////////////
 
   const handleClickLevel = (e) => {
     const number = e.target.value;
@@ -44,52 +56,53 @@ export default function Study() {
     if (levelRotation != "rotationLevelContainerRotation") {
       setLevelRotation("rotationLevelContainerRotation");
     }
-    if (Content != "content2") {
+    if (Content === "content1") {
       setContent("content2");
-    }
-    if (contentBookFast === "BookSection") {
-      setContentBookFast("BookSectionFast");
+      setLevelMenu({ ContentBook: contentBookFast });
     }
     if (number === "1") {
-      setMenutScale((prev) => ({
+      setLevelMenu((prev) => ({
         ...prev,
         Beginner: levelContainer,
         Intermediate: levelContainerNone,
         Advanced: levelContainerNone,
-        BeginnerElements: contentBookFast,
-        IntermediateElements: contentDefault,
-        AdvancedElements: contentDefault,
+        BeginnerElements: levelMenu.ContentBook,
+        IntermediateElements: contentNone,
+        AdvancedElements: contentNone,
       }));
     } else if (number === "2") {
-      setMenutScale((prev) => ({
+      setLevelMenu((prev) => ({
         ...prev,
         Beginner: levelContainerNone,
         Intermediate: levelContainer,
         Advanced: levelContainerNone,
-        BeginnerElements: contentDefault,
-        IntermediateElements: contentBookFast,
-        AdvancedElements: contentDefault,
+        BeginnerElements: contentNone,
+        IntermediateElements: levelMenu.ContentBook,
+        AdvancedElements: contentNone,
       }));
     } else {
-      setMenutScale((prev) => ({
+      setLevelMenu((prev) => ({
         ...prev,
         Beginner: levelContainerNone,
         Intermediate: levelContainerNone,
         Advanced: levelContainer,
-        BeginnerElements: "contentNone",
-        IntermediateElements: "contentNone",
-        AdvancedElements: contentBookFast,
+        BeginnerElements: contentNone,
+        IntermediateElements: contentNone,
+        AdvancedElements: levelMenu.ContentBook,
       }));
     }
   };
+  //////////////// BEGINNER, INTERMEDIATE, ADVANCED ////////////////
 
+  //////////////// BOOKS, YOUTUBE, WEBSITES ////////////////////////
+  //////////////////// BOOKS ////////////////////////
   const handleClick1 = () => {
     if (Content != "content1" && Content != "content2") {
       setContent("content1");
     } else {
       setContent("content1_1");
     }
-    if (menuScale.Beginner === levelContainer) {
+    if (levelMenu.Beginner === levelContainer) {
       setContent("content2");
     }
     setMenuRotation("rotation2");
@@ -103,6 +116,9 @@ export default function Study() {
       ContentWebsites: "contentNone",
     }));
   };
+  //////////////////// BOOKS ////////////////////////
+
+  //////////////////// YOUTUBE ////////////////////////
   const handleClick2 = () => {
     if (Content != "content1" && Content != "content2") {
       setContent("content1");
@@ -124,7 +140,14 @@ export default function Study() {
       ContentYoutube: "contentYoutube",
       ContentWebsites: "contentNone",
     }));
+    setLevelMenu(defaultLevelMenu);
+    if (levelRotation === "rotationLevelContainerRotation") {
+      setLevelRotation("rotationLevelContainer");
+    }
   };
+  //////////////////// YOUTUBE ////////////////////////
+
+  //////////////////// WEBSITES ////////////////////////
   const handleClick3 = () => {
     if (Content != "content1" && Content != "content2") {
       setContent("content1");
@@ -145,8 +168,14 @@ export default function Study() {
       ContentYoutube: "contentNone",
       ContentWebsites: "contentWebsites",
     }));
+    setLevelMenu(defaultLevelMenu);
+    if (levelRotation === "rotationLevelContainerRotation") {
+      setLevelRotation("rotationLevelContainer");
+    }
   };
+  //////////////////// WEBSITES ////////////////////////
 
+  //////////////// BOOKS, YOUTUBE, WEBSITES ////////////////////////
   return (
     <div className="Study">
       <div className={menuRotation}>
@@ -166,32 +195,32 @@ export default function Study() {
             <button
               value="1"
               onClick={handleClickLevel}
-              className={menuScale.Beginner}
+              className={levelMenu.Beginner}
             >
               Beginner
             </button>
             <button
               value="2"
               onClick={handleClickLevel}
-              className={menuScale.Intermediate}
+              className={levelMenu.Intermediate}
             >
               Intermediate
             </button>
             <button
               value="3"
               onClick={handleClickLevel}
-              className={menuScale.Advanced}
+              className={levelMenu.Advanced}
             >
               Advanced
             </button>
           </div>
-          <div className={menuScale.BeginnerElements}>
+          <div className={levelMenu.BeginnerElements}>
             <Books props={propRef} />
           </div>
-          <div className={menuScale.IntermediateElements}>
+          <div className={levelMenu.IntermediateElements}>
             <Books props={propRef} />
           </div>
-          <div className={menuScale.AdvancedElements}>
+          <div className={levelMenu.AdvancedElements}>
             <Books props={propRef} />
           </div>
         </div>

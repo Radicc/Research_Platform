@@ -1,3 +1,4 @@
+@import "../sass/animation";
 .Study {
   position: relative;
   display: flex;
@@ -235,7 +236,7 @@
   top: 10vw;
   left: 0vw;
   gap: 5em;
-  animation: BookSection 0.5s ease forwards;
+  animation: var(--animation-Fast);
 }
 .BookSection {
   position: absolute;
@@ -249,7 +250,7 @@
   top: 10vw;
   left: 0vw;
   gap: 5em;
-  animation: BookSection 2s ease forwards;
+  animation: var(--animation-First);
 }
 @keyframes BookSection {
   0% {
