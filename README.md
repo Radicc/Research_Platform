@@ -1,4 +1,4 @@
-    Research Platform
+Research Platform
 
 Free investment educative website for people that want to improve money management skills.
 ( This project is my educative project )
@@ -6,11 +6,15 @@ Free investment educative website for people that want to improve money manageme
 
 What can you find on the website?:
 
-● Study resources 📖 - 3 Categories of resources: 1,📕 Books 2,🎦 Youtube Channels 3, Websites
+● Study resources 📖(3 Categories of resources):
+1,📕 Books
+2,🎦 Youtube Channels
+3,🌐Websites
 
 ![Alt text](/src/Home/images/StudyBooks.jpg "Study resources")
 
-● Retirement calculator - Now you can calculate how much money you need to save for retirement.
+● Retirement calculator 👴:
+Now you can calculate how much money you need to save for retirement.
 
 ![Alt text](/src/Home/images/RetirementCalculator1.jpg "Retirement calculator")
 ![Alt text](/src/Home/images/RetirementCalculator2.jpg "Retirement calculator")
