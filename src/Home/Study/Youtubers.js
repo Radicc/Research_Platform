@@ -53,8 +53,11 @@ export default function Youtubers(props) {
   const RenderBooks = (y) => {
     for (let i = 0; i < y.length; i++) {
       content.push(
-        <div className="YoutubeComponent">
-          <img className="profileIcon" href={y[i].link} src={y[i].img} />
+        <div
+          onClick={() => (window.location.href = y[i].link)}
+          className="YoutubeComponent"
+        >
+          <img className="profileIcon" src={y[i].img} />
           <img className="profileBanner" src={y[i].banner} />
         </div>
       );

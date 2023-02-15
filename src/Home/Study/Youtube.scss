@@ -1,4 +1,4 @@
-@import "../sass/animation";
+@import "../sass/_animation";
 .contentYoutube {
   position: relative;
   display: flex;
@@ -7,8 +7,8 @@
   width: 100%;
   gap: 2vw;
   overflow-y: scroll;
-
-  animation: opacityContent 0.8s ease forwards;
+  overflow-x: hidden;
+  justify-content: center;
 }
 
 .YoutubeComponent {
@@ -16,19 +16,37 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 20vh;
   gap: 2vw;
   animation: var(--animation-BannerYT);
+}
 
-  .profileIcon {
-    position: absolute;
-    width: 5vw;
-    left: 2vw;
-    top: 10vh;
-    border: 2px solid black;
-    border-radius: 50vw;
+.profileIcon {
+  position: absolute;
+  width: 4vw;
+  left: 3vw;
+  top: 1vh;
+  border-radius: 50vw;
+  cursor: pointer;
+  z-index: 2;
+}
+.profileBanner {
+  opacity: 0.7;
+  width: 65vw;
+  z-index: 1;
+  border-radius: 1.5vw;
+  cursor: pointer;
+  &:hover {
+    filter: drop-shadow(0 0 0.4rem #ffd700);
+    animation: scaleBanner 0.5s ease forwards;
   }
-  .profileBanner {
-    width: 69vw;
+}
+@keyframes scaleBanner {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.03;
   }
 }
 @keyframes bannerAni {

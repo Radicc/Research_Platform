@@ -58,7 +58,7 @@ export default function Study(props) {
     if (levelRotation != "rotationLevelContainerRotation") {
       setLevelRotation("rotationLevelContainerRotation");
     }
-    if (Content === "content1") {
+    if (Content === "content1" || Content === "content1_1") {
       setContent("content2");
       setLevelMenu({ ContentBook: contentBookFast });
     }
@@ -105,8 +105,6 @@ export default function Study(props) {
 
     if (Content != "content1" && Content != "content2") {
       setContent("content1");
-    } else {
-      setContent("content1_1");
     }
     if (levelMenu.Beginner === levelContainer) {
       setContent("content2");
@@ -131,10 +129,10 @@ export default function Study(props) {
     if (Content != "content1" && Content != "content2") {
       setContent("content1");
     }
-    if (
-      menuScale.Books === containerSection ||
-      menuScale.Websites === containerSection
-    ) {
+    if (Content === "content2") {
+      setContent("content1_1");
+    }
+    if (menuScale.Websites === containerSection) {
       setContent("contentFast");
     }
 
