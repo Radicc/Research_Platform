@@ -1,8 +1,10 @@
 import "./Study.scss";
 import { useState, useRef } from "react";
 import Books from "./Books";
+import Youtube from "./Youtubers";
+import Youtubers from "./Youtubers";
 
-export default function Study() {
+export default function Study(props) {
   const [menuRotation, setMenuRotation] = useState("rotation");
   const [levelRotation, setLevelRotation] = useState("rotationLevelContainer");
   const [Content, setContent] = useState("contentNone");
@@ -97,6 +99,10 @@ export default function Study() {
   //////////////// BOOKS, YOUTUBE, WEBSITES ////////////////////////
   //////////////////// BOOKS ////////////////////////
   const handleClick1 = () => {
+    if (menuRotation != "rotation") {
+      props.setNavbarClass("header3");
+    }
+
     if (Content != "content1" && Content != "content2") {
       setContent("content1");
     } else {
@@ -120,6 +126,8 @@ export default function Study() {
 
   //////////////////// YOUTUBE ////////////////////////
   const handleClick2 = () => {
+    props.setNavbarClass("header2");
+
     if (Content != "content1" && Content != "content2") {
       setContent("content1");
     }
@@ -149,6 +157,7 @@ export default function Study() {
 
   //////////////////// WEBSITES ////////////////////////
   const handleClick3 = () => {
+    props.setNavbarClass("header2");
     if (Content != "content1" && Content != "content2") {
       setContent("content1");
     }
@@ -224,7 +233,9 @@ export default function Study() {
             <Books props={propRef} />
           </div>
         </div>
-        <div className={menuScale.ContentYoutube}>Youtube</div>
+        <div className={menuScale.ContentYoutube}>
+          <Youtubers />
+        </div>
         <div className={menuScale.ContentWebsites}>Websites</div>
       </div>
     </div>

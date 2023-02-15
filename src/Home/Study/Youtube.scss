@@ -1,0 +1,44 @@
+@import "../sass/animation";
+.contentYoutube {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  gap: 2vw;
+  overflow-y: scroll;
+
+  animation: opacityContent 0.8s ease forwards;
+}
+
+.YoutubeComponent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+  animation: var(--animation-BannerYT);
+
+  .profileIcon {
+    position: absolute;
+    width: 5vw;
+    left: 2vw;
+    top: 10vh;
+    border: 2px solid black;
+    border-radius: 50vw;
+  }
+  .profileBanner {
+    width: 69vw;
+  }
+}
+@keyframes bannerAni {
+  0% {
+    transform: translateX(200vw);
+  }
+  20% {
+    transform: translateX(200vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}

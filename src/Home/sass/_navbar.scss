@@ -4,10 +4,46 @@
   position: relative;
   display: flex;
   justify-content: center;
+  z-index: 3;
 }
+.header2 {
+  position: absolute;
+  display: flex;
+  left: 5vw;
+  animation: header2Ani 1s ease forwards;
+  z-index: 3;
+}
+@keyframes header2Ani {
+  0% {
+    left: 40vw;
+  }
+  100% {
+    left: 5vw;
+  }
+}
+.header3 {
+  position: relative;
+  display: flex;
+  animation: header3Ani 1s ease forwards;
+  z-index: 3;
+}
+@keyframes header3Ani {
+  0% {
+    left: 5vw;
+  }
+  99% {
+    left: 40vw;
+    justify-content: unset;
+  }
+  100% {
+    left: 0vw;
+    justify-content: center;
+  }
+}
+
 .iconSVG {
   position: relative;
-  height: 44px;
+  height: 4.5vh;
   top: 2vh;
   cursor: pointer;
   &:hover {
@@ -24,7 +60,7 @@
   justify-content: center;
 
   border-radius: 0 0 2em 2em;
-  z-index: 2;
+  z-index: 3;
   gap: 4em;
 }
 .headerContainerUnActive {
@@ -32,11 +68,12 @@
   display: inline-flex;
   width: 20%;
   height: 10vh;
+  justify-content: center;
   background-color: rgba(77, 80, 97, 0.84);
   box-shadow: 0px 3px #ffd700;
   justify-content: center;
   border-radius: 0 0 2em 2em;
-  z-index: 2;
+  z-index: 3;
   gap: 4em;
   animation: ok 0.4s ease forwards;
 }
@@ -59,7 +96,7 @@
   width: 20%;
   height: 10vh;
   justify-content: center;
-  z-index: 2;
+  z-index: 3;
   gap: 4em;
 }
 .pushMenuDown {
@@ -154,8 +191,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 180px;
-  height: 180px;
+  width: 9vw;
+  height: 18vh;
   opacity: 1;
   background-color: none;
   border-radius: 50%;
@@ -175,8 +212,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 180px;
-  height: 180px;
+  width: 9vw;
+  height: 18vh;
   opacity: 1;
   background-color: none;
   border-radius: 50%;

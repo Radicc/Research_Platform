@@ -11,7 +11,7 @@ import calculatorOldMan from "./images/calculatorOldManWhite.png";
 import heartSVG from "./images/heartSVG.png";
 import homeSVG from "./images/homeSVG.png";
 
-export default function Navbar() {
+export default function Navbar(props) {
   const [Active, IsActive] = useState("off");
   const [Style, setStyle] = useState("pushMenuHidden");
   const [backBurger, setBackBurger] = useState("headerContainerStart");
@@ -40,7 +40,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="header">
+    <div className={props.navbarClass}>
       <div className={backBurger}>
         <NavLink onClick={handleClickSVG} to="/Research_Platform">
           <img className="iconSVG" src={homeSVG} />
