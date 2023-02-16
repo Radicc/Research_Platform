@@ -1,5 +1,6 @@
 @import "../sass/animation";
 @import "../Study/Youtube.scss";
+@import "../Study/Websites.scss";
 .Study {
   position: relative;
   display: flex;
@@ -661,12 +662,6 @@
     }
   }
 
-  .contentWebsites {
-    position: relative;
-    display: flex;
-    font-size: 5rem;
-    animation: opacityContent 0.8s ease forwards;
-  }
   @keyframes opacityContent2 {
     0% {
       opacity: 0;

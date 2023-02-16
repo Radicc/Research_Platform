@@ -1,8 +1,8 @@
 import "./Study.scss";
 import { useState, useRef } from "react";
 import Books from "./Books";
-import Youtube from "./Youtubers";
 import Youtubers from "./Youtubers";
+import Websites from "./Websites";
 
 export default function Study(props) {
   const [menuRotation, setMenuRotation] = useState("rotation");
@@ -234,7 +234,9 @@ export default function Study(props) {
         <div className={menuScale.ContentYoutube}>
           <Youtubers />
         </div>
-        <div className={menuScale.ContentWebsites}>Websites</div>
+        <div className={menuScale.ContentWebsites}>
+          <Websites />
+        </div>
       </div>
     </div>
   );

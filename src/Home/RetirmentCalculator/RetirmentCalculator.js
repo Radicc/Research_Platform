@@ -2,7 +2,10 @@ import "./RetirmentCalculator.scss";
 import "./_calculateButton.scss";
 import { useState, useRef } from "react";
 
-export default function RetirmentCalculator() {
+export default function RetirmentCalculator(props) {
+  if (props.navbarClass === "header2") {
+    props.setNavbarClass("header3");
+  }
   const defaultForm = {
     Age: 0,
     RetirementAge: 0,

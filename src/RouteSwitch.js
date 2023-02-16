@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Stocks from "./Home/Stocks/Stocks";
 import Study from "./Home/Study/Study";
 import StocksAnalyzer from "./Home/StocksAnalyzer/StocksAnalyzer";
@@ -10,14 +10,35 @@ import FavoriteStocks from "./Home/FavoriteStocks/FavoriteStocks";
 
 const RouteSwitch = () => {
   const [navbarClass, setNavbarClass] = useState("header");
-  console.log(navbarClass);
+  const [menuClass, setMenuClass] = useState("menu2");
+
+  useEffect(() => {
+    if (navbarClass === "header2") {
+      setMenuClass("menu2");
+    } else {
+      setMenuClass("menu");
+    }
+  }, [navbarClass]);
 
   return (
     <Router>
-      <Navbar navbarClass={navbarClass} />
+      <Navbar navbarClass={navbarClass} menuClass={menuClass} />
       <Routes>
-        <Route path="/Research_Platform" element={<Home />} />
-        <Route path="/RetirmentCalculator" element={<RetirmentCalculator />} />
+        <Route
+          path="/Research_Platform"
+          element={
+            <Home navbarClass={navbarClass} setNavbarClass={setNavbarClass} />
+          }
+        />
+        <Route
+          path="/RetirmentCalculator"
+          element={
+            <RetirmentCalculator
+              navbarClass={navbarClass}
+              setNavbarClass={setNavbarClass}
+            />
+          }
+        />
         <Route path="/Stocks" element={<Stocks />} />
         <Route path="/StocksAnalyzer" element={<StocksAnalyzer />} />
         <Route
@@ -26,7 +47,15 @@ const RouteSwitch = () => {
             <Study navbarClass={navbarClass} setNavbarClass={setNavbarClass} />
           }
         />
-        <Route path="/FavoriteStocks" element={<FavoriteStocks />} />
+        <Route
+          path="/FavoriteStocks"
+          element={
+            <FavoriteStocks
+              navbarClass={navbarClass}
+              setNavbarClass={setNavbarClass}
+            />
+          }
+        />
       </Routes>
     </Router>
   );

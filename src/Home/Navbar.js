@@ -61,7 +61,7 @@ export default function Navbar(props) {
 
       <div className={Style}>
         <div className="containerNav">
-          <div className="menu">
+          <div className={props.menuClass}>
             <NavLink to="/Stocks" onClick={handleClick} className="container">
               <span className="circleUnactive">
                 <img src={stocks} />

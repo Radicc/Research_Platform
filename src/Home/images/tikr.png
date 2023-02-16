@@ -1,0 +1,23 @@
+<svg
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  x="0px"
+  y="0px"
+  viewBox="0 0 110 110"
+  enable-background="new 0 0 110 110"
+  xml:space="preserve"
+>
+  <g transform="translate(-45, -47)">
+    <polygon
+      fill="#FF9900"
+      points="109.1,73.3 107.9,75.5 100,88.9 92.1,102.4 68.8,142.4 50.5,142.4 83,86.8 90.9,73.3 
+98.7,59.8 100,57.6 101.3,59.8 	"
+    />
+    <polygon fill="#FF9900" points="115.4,142.4 84.6,142.4 100,115.9 	" />
+    <polygon
+      fill="#FF9900"
+      points="149.5,142.4 131.2,142.4 107.9,102.4 115.7,88.9 117,86.8 	"
+    />
+  </g>
+</svg>
