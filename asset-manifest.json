@@ -1,31 +1,39 @@
 {
   "files": {
-    "main.css": "/Research_Platform/static/css/main.f4928299.css",
-    "main.js": "/Research_Platform/static/js/main.02356ffa.js",
+    "main.css": "/Research_Platform/static/css/main.68080076.css",
+    "main.js": "/Research_Platform/static/js/main.8dd8f9d4.js",
     "static/js/787.28cb0dcd.chunk.js": "/Research_Platform/static/js/787.28cb0dcd.chunk.js",
     "static/media/wallstreet_3.jpg": "/Research_Platform/static/media/wallstreet_3.6fc96f5f9972fbfcca3d.jpg",
     "static/media/wallstreet_1.jpg": "/Research_Platform/static/media/wallstreet_1.eb625b4703a8581982b4.jpg",
     "static/media/wallstreet_2_1.jpg": "/Research_Platform/static/media/wallstreet_2_1.2fbd53b84086c17d4c7a.jpg",
     "static/media/background2.jpg": "/Research_Platform/static/media/background2.088cb63cc481aa6fdb77.jpg",
+    "static/media/yahooBanner.jpg": "/Research_Platform/static/media/yahooBanner.73b039167083d922b8fb.jpg",
+    "static/media/SeakingAlphaBanner.jpg": "/Research_Platform/static/media/SeakingAlphaBanner.bec88a80bd4cf5fb5ca9.jpg",
+    "static/media/tradingViewBanner.jpg": "/Research_Platform/static/media/tradingViewBanner.47454a0bc9cde4ccf78e.jpg",
     "static/media/NewMoneyBanner.jpg": "/Research_Platform/static/media/NewMoneyBanner.cdbd92b7a598636fd55a.jpg",
+    "static/media/TikrLogo.png": "/Research_Platform/static/media/TikrLogo.26816c4803442ef5adbe.png",
+    "static/media/TikrBanner.jpg": "/Research_Platform/static/media/TikrBanner.dcdec4023cb86f71708a.jpg",
     "static/media/EveryThingMoneyBanner.jpg": "/Research_Platform/static/media/EveryThingMoneyBanner.9cad6b48097898016f6b.jpg",
     "static/media/The_Richest_Man_In_Babylon.jpg": "/Research_Platform/static/media/The_Richest_Man_In_Babylon.d938bda262e230f0ba72.jpg",
     "static/media/Richer_Wiser_Happier.jpeg": "/Research_Platform/static/media/Richer_Wiser_Happier.51f666b68af6f51a5c2a.jpeg",
     "static/media/SvenCarlinBanner.jpg": "/Research_Platform/static/media/SvenCarlinBanner.e14433991caf30eb4271.jpg",
+    "static/media/seakingAlphaLogo.png": "/Research_Platform/static/media/seakingAlphaLogo.acbf5ffcff22906b4dca.png",
     "static/media/LearnToInvestBanner.jpg": "/Research_Platform/static/media/LearnToInvestBanner.aacedfaee6b961c983b2.jpg",
+    "static/media/yahooLogo.png": "/Research_Platform/static/media/yahooLogo.cb1450de5a79801a5bba.png",
     "static/media/The_Intelligent_Investor.jpeg": "/Research_Platform/static/media/The_Intelligent_Investor.78c1e46432ac3f6b15f7.jpeg",
     "static/media/Psychology_of_Money.jpg": "/Research_Platform/static/media/Psychology_of_Money.4691f412b6501b31ee81.jpg",
     "static/media/One_Up_On_WallStreet.jpg": "/Research_Platform/static/media/One_Up_On_WallStreet.f0b08ddda71e8a4ee184.jpg",
     "static/media/stock_analyzerWhite.png": "/Research_Platform/static/media/stock_analyzerWhite.7c7a129445edb95a1bc6.png",
     "static/media/Good_Stocks_Cheap.jpg": "/Research_Platform/static/media/Good_Stocks_Cheap.cc1be447869120640575.jpg",
+    "static/media/tradingViewLogo.png": "/Research_Platform/static/media/tradingViewLogo.89081890d4bcef2585c7.png",
     "static/media/heartSVG.png": "/Research_Platform/static/media/heartSVG.f0a6949edaab2c39b5ed.png",
     "index.html": "/Research_Platform/index.html",
-    "main.f4928299.css.map": "/Research_Platform/static/css/main.f4928299.css.map",
-    "main.02356ffa.js.map": "/Research_Platform/static/js/main.02356ffa.js.map",
+    "main.68080076.css.map": "/Research_Platform/static/css/main.68080076.css.map",
+    "main.8dd8f9d4.js.map": "/Research_Platform/static/js/main.8dd8f9d4.js.map",
     "787.28cb0dcd.chunk.js.map": "/Research_Platform/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4928299.css",
-    "static/js/main.02356ffa.js"
+    "static/css/main.68080076.css",
+    "static/js/main.8dd8f9d4.js"
   ]
 }
