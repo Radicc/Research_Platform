@@ -9,6 +9,7 @@
   overflow-y: scroll;
   overflow-x: hidden;
   justify-content: center;
+  animation: var(--animation-BannerYT);
 }
 
 .YoutubeComponent {
@@ -18,7 +19,10 @@
   align-items: center;
   height: 20vh;
   gap: 2vw;
-  animation: var(--animation-BannerYT);
+
+  &:hover {
+    animation: scaleBanner 0.5s ease forwards;
+  }
 }
 
 .profileIcon {
@@ -36,10 +40,6 @@
   z-index: 1;
   border-radius: 1.5vw;
   cursor: pointer;
-  &:hover {
-    filter: drop-shadow(0 0 0.4rem #ffd700);
-    animation: scaleBanner 0.5s ease forwards;
-  }
 }
 @keyframes scaleBanner {
   0% {

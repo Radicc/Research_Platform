@@ -5,8 +5,8 @@ import yahooFinanceLogo from "../images/yahooLogo.png";
 import yahooFinanceBanner from "../images/yahooBanner.jpg";
 import tradingViewLogo from "../images/tradingViewLogo.png";
 import tradingViewBanner from "../images/tradingViewBanner.jpg";
-import seakingAlphaLogo from "../images/seakingAlphaLogo.png";
-import seakingAlphaBanner from "../images/SeakingAlphaBanner.jpg";
+import seekingAlphaLogo from "../images/seakingAlphaLogo.png";
+import seekingAlphaBanner from "../images/SeakingAlphaBanner.jpg";
 import tikrLogo from "../images/TikrLogo.png";
 import tikrBanner from "../images/TikrBanner.jpg";
 
@@ -17,24 +17,28 @@ export default function Websites(props) {
       banner: yahooFinanceBanner,
       name: "Yahoo Finance",
       link: "https://finance.yahoo.com/",
+      text: "Yahoo! Finance is a media property that is part of the Yahoo! network. It provides financial news, data and commentary including stock quotes, press releases, financial reports, and original content. It also offers some online tools for personal finance management.",
     },
     {
       img: tradingViewLogo,
       banner: tradingViewBanner,
       name: "TradingView",
       link: "https://www.tradingview.com/",
+      text: "Charting platform and social network used by 30M+ traders and investors worldwide to spot opportunities across global markets.",
     },
     {
-      img: seakingAlphaLogo,
-      banner: seakingAlphaBanner,
-      name: "Yahoo Finance",
-      link: "https://finance.yahoo.com/",
+      img: seekingAlphaLogo,
+      banner: seekingAlphaBanner,
+      name: "SeekingAlpha",
+      link: "https://seekingalpha.com/",
+      text: "Seeking Alpha is a crowd-sourced content service for financial markets. Articles and research covers a broad range of stocks, asset classes, exchange-traded funds (ETFs), and investment strategies.",
     },
     {
       img: tikrLogo,
       banner: tikrBanner,
-      name: "TradingView",
-      link: "https://www.tradingview.com/",
+      name: "Tikr Terminal",
+      link: "https://www.tikr.com/",
+      text: "Invest like Wall Street with TIKR Terminal - Find the best stocks, follow top investors, quickly analyze businesses, and monitor your portfolio with TIKR.",
     },
   ];
   const [websitesInfo, setWebsitesInfo] = useState(websitesInfoObject);
@@ -60,6 +64,10 @@ export default function Websites(props) {
         >
           <img className="Logo" src={y[i].img} />
           <img className="Banner" src={y[i].banner} />
+          <div className="textarea">
+            <h2 className="titul">{y[i].name}</h2>
+            <p className="text">{y[i].text}</p>
+          </div>
         </div>
       );
     }
@@ -73,6 +81,10 @@ export default function Websites(props) {
         >
           <img className="Logo" src={y[i].img} />
           <img className="Banner" src={y[i].banner} />
+          <div className="textarea">
+            <h2 className="titul">{y[i].name}</h2>
+            <p className="text">{y[i].text}</p>
+          </div>
         </div>
       );
     }

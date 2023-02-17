@@ -10,6 +10,7 @@
   overflow-x: hidden;
   justify-content: center;
   align-items: center;
+  animation: var(--animation-BannerYT);
 }
 
 .WebsitesComponent {
@@ -17,8 +18,35 @@
   display: flex;
 
   align-items: center;
+  justify-content: center;
   gap: 2vw;
-  animation: var(--animation-BannerYT);
+  .textarea {
+    display: none;
+  }
+
+  &:hover {
+    animation: scaleBanner 0.5s ease forwards;
+    .textarea {
+      position: absolute;
+      flex-direction: column;
+      gap: 0.8vh;
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      opacity: 0;
+      padding: 1vh 0;
+      cursor: pointer;
+
+      border-radius: 0 0 1.45vw 1.45vw;
+      bottom: 0vh;
+      background-color: rgba(0, 0, 0, 0.699);
+      z-index: 2;
+      animation: textAreaOpacity 0.5s ease forwards;
+    }
+  }
 }
 .panel1 {
   position: relative;
@@ -43,10 +71,27 @@
   z-index: 1;
   border-radius: 1.5vw;
   cursor: pointer;
-  &:hover {
-    filter: drop-shadow(0 0 0.4rem #ffd700);
-    animation: scaleBanner 0.5s ease forwards;
+}
+
+@keyframes textAreaOpacity {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
+.titul {
+  position: relative;
+  font-size: 1vw;
+  width: 80%;
+  color: #ffd700;
+}
+.text {
+  position: relative;
+  font-size: 0.8vw;
+  width: 80%;
+  color: whitesmoke;
 }
 @keyframes scaleBanner {
   0% {
@@ -58,10 +103,10 @@
 }
 @keyframes bannerAni {
   0% {
-    transform: translateX(200vw);
+    transform: translateX(150vw);
   }
   20% {
-    transform: translateX(200vw);
+    transform: translateX(150vw);
   }
   100% {
     transform: translateX(0vw);
