@@ -236,11 +236,10 @@
   display: flex;
   flex-direction: column;
 
-  justify-content: center;
   align-items: center;
   width: 100%;
 
-  top: 0vw;
+  top: 12vh;
   left: 0vw;
   gap: 5em;
   animation: var(--animation-Fast);
@@ -289,7 +288,9 @@
   }
   img {
     position: relative;
-    width: 60%;
+    width: 18vw;
+    border-radius: 0.8vw;
+    filter: drop-shadow(10px 10px 5px rgb(0, 0, 0));
   }
 }
 
