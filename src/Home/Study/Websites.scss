@@ -112,3 +112,118 @@
     transform: translateX(0vw);
   }
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .contentWebsites {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    justify-content: unset;
+    align-items: center;
+    animation: var(--animation-BannerYT);
+    top: 0vh;
+  }
+
+  .WebsitesComponent {
+    position: relative;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    top: 10vh;
+    .textarea {
+      display: none;
+    }
+
+    .textarea {
+      position: absolute;
+      flex-direction: column;
+      gap: 0.8vh;
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      opacity: 1;
+      padding: 1vh 0;
+      cursor: pointer;
+
+      border-radius: 0 0 1.45vw 1.45vw;
+      bottom: 0vh;
+      background-color: rgba(0, 0, 0, 0.699);
+      z-index: 2;
+    }
+  }
+  .panel1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+  }
+
+  .Logo {
+    position: absolute;
+    display: none;
+    width: 4vw;
+    left: 3vw;
+    top: 1vh;
+    border-radius: 50vw;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .Banner {
+    position: relative;
+    opacity: 0.7;
+    width: 90vw;
+    height: 30vh;
+    object-fit: cover;
+    z-index: 1;
+    border-radius: 1.5vw;
+    cursor: pointer;
+  }
+
+  @keyframes textAreaOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .titul {
+    position: relative;
+    font-size: 3vw;
+    width: 80%;
+    color: #ffd700;
+  }
+  .text {
+    position: relative;
+    font-size: 1.8vw;
+    width: 80%;
+    color: whitesmoke;
+  }
+  @keyframes scaleBanner {
+    0% {
+      scale: 1;
+    }
+    100% {
+      scale: 1.03;
+    }
+  }
+  @keyframes bannerAni {
+    0% {
+      transform: translateX(150vw);
+    }
+    20% {
+      transform: translateX(150vw);
+    }
+    100% {
+      transform: translateX(0vw);
+    }
+  }
+}
