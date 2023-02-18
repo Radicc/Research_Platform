@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Research_Platform/static/css/main.1d045545.css",
-    "main.js": "/Research_Platform/static/js/main.b0f30595.js",
+    "main.css": "/Research_Platform/static/css/main.f75738ba.css",
+    "main.js": "/Research_Platform/static/js/main.cec9fa21.js",
     "static/js/787.28cb0dcd.chunk.js": "/Research_Platform/static/js/787.28cb0dcd.chunk.js",
     "static/media/wallstreet_3.jpg": "/Research_Platform/static/media/wallstreet_3.6fc96f5f9972fbfcca3d.jpg",
     "static/media/wallstreet_1.jpg": "/Research_Platform/static/media/wallstreet_1.eb625b4703a8581982b4.jpg",
@@ -20,6 +20,7 @@
     "static/media/Richer_Wiser_Happier.jpeg": "/Research_Platform/static/media/Richer_Wiser_Happier.2747193e860353bcb7a9.jpeg",
     "static/media/seakingAlphaLogo.png": "/Research_Platform/static/media/seakingAlphaLogo.acbf5ffcff22906b4dca.png",
     "static/media/LearnToInvestBanner.jpg": "/Research_Platform/static/media/LearnToInvestBanner.aacedfaee6b961c983b2.jpg",
+    "static/media/plain_bagel.jpg": "/Research_Platform/static/media/plain_bagel.7d14a8d8df082dfbf677.jpg",
     "static/media/yahooLogo.png": "/Research_Platform/static/media/yahooLogo.cb1450de5a79801a5bba.png",
     "static/media/The_Intelligent_Investor.jpeg": "/Research_Platform/static/media/The_Intelligent_Investor.29e85703789e46ecde3a.jpeg",
     "static/media/Psychology_of_Money.jpg": "/Research_Platform/static/media/Psychology_of_Money.7ebec949173c213537e4.jpg",
@@ -27,13 +28,14 @@
     "static/media/stock_analyzerWhite.png": "/Research_Platform/static/media/stock_analyzerWhite.7c7a129445edb95a1bc6.png",
     "static/media/tradingViewLogo.png": "/Research_Platform/static/media/tradingViewLogo.89081890d4bcef2585c7.png",
     "static/media/heartSVG.png": "/Research_Platform/static/media/heartSVG.f0a6949edaab2c39b5ed.png",
+    "static/media/backSVG.svg": "/Research_Platform/static/media/backSVG.e583dc785cfb22294cb2fe4e1d273782.svg",
     "index.html": "/Research_Platform/index.html",
-    "main.1d045545.css.map": "/Research_Platform/static/css/main.1d045545.css.map",
-    "main.b0f30595.js.map": "/Research_Platform/static/js/main.b0f30595.js.map",
+    "main.f75738ba.css.map": "/Research_Platform/static/css/main.f75738ba.css.map",
+    "main.cec9fa21.js.map": "/Research_Platform/static/js/main.cec9fa21.js.map",
     "787.28cb0dcd.chunk.js.map": "/Research_Platform/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d045545.css",
-    "static/js/main.b0f30595.js"
+    "static/css/main.f75738ba.css",
+    "static/js/main.cec9fa21.js"
   ]
 }
