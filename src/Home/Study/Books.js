@@ -12,7 +12,7 @@ export default function Books(props) {
   const booksInfo = [
     {
       img: Babylon,
-      name: "The richest man in babylon",
+      name: "The Richest Man in Babylon",
       author: "George S. Clason",
       difficulty: 1,
     },

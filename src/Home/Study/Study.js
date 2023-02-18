@@ -3,6 +3,7 @@ import { useState, useRef } from "react";
 import Books from "./Books";
 import Youtubers from "./Youtubers";
 import Websites from "./Websites";
+import BackSVG from "../images/backSVG.svg";
 
 export default function Study(props) {
   const [menuRotation, setMenuRotation] = useState("rotation");
@@ -38,6 +39,8 @@ export default function Study(props) {
   const [levelMenu, setLevelMenu] = useState(defaultLevelMenu);
 
   const defaultMenu = {
+    BackSVG: "backSVGHidden",
+
     Books: containerDefault,
     Youtube: containerDefault,
     Websites: containerDefault,
@@ -112,6 +115,7 @@ export default function Study(props) {
     setMenuRotation("rotation2");
     setMenutScale((prev) => ({
       ...prev,
+      BackSVG: "backSVG",
       Books: containerSection,
       Youtube: containerSectionNone,
       Websites: containerSectionNone,
@@ -139,6 +143,7 @@ export default function Study(props) {
     setMenuRotation("rotation2");
     setMenutScale((prev) => ({
       ...prev,
+      BackSVG: "backSVG",
       Books: containerSectionNone,
       Youtube: containerSection,
       Websites: containerSectionNone,
@@ -168,6 +173,7 @@ export default function Study(props) {
     setMenuRotation("rotation2");
     setMenutScale((prev) => ({
       ...prev,
+      BackSVG: "backSVG",
       Books: containerSectionNone,
       Youtube: containerSectionNone,
       Websites: containerSection,
@@ -183,8 +189,27 @@ export default function Study(props) {
   //////////////////// WEBSITES ////////////////////////
 
   //////////////// BOOKS, YOUTUBE, WEBSITES ////////////////////////
+  const handleBackButton = () => {
+    setContent("contentNone");
+    setMenuRotation("rotation");
+    setMenutScale((prev) => ({
+      ...prev,
+      BackSVG: "backSVGHidden",
+      Books: containerDefault,
+      Youtube: containerDefault,
+      Websites: containerDefault,
+      ContentBooks: "contentNone",
+      ContentYoutube: "contentNone",
+      ContentWebsites: "contentNone",
+    }));
+  };
   return (
     <div className="Study">
+      <img
+        className={menuScale.BackSVG}
+        src={BackSVG}
+        onClick={handleBackButton}
+      />
       <div className={menuRotation}>
         <button value="1" onClick={handleClick1} className={menuScale.Books}>
           Books

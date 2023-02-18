@@ -13,12 +13,19 @@
   height: 100vh;
   background-color: rgba(24, 24, 24, 0.96);
 }
+.backSVG {
+  display: none;
+}
+.backSVGHidden {
+  display: none;
+}
 .rotation {
   position: fixed;
   display: flex;
   flex-direction: column;
   gap: 2em;
   width: 35vw;
+  animation: opacityContent s ease forwards;
 }
 .rotation2 {
   position: fixed;
@@ -51,7 +58,7 @@
   cursor: pointer;
   background-color: transparent;
   color: whitesmoke;
-  font-size: 4rem;
+  font-size: 3vw;
   z-index: 3;
   &:hover {
     border: 5px solid #ffd700;
@@ -70,7 +77,7 @@
   animation: menuScale 0.4s ease forwards;
   background-color: transparent;
   color: whitesmoke;
-  font-size: 4rem;
+  font-size: 3vw;
   &:hover {
     border: 5px solid #ffd700;
     filter: drop-shadow(0 0 0.1rem #ffd700);
@@ -212,7 +219,7 @@
   justify-content: center;
   height: 20em;
   left: 50vw;
-  top: 33vh;
+  top: 40vh;
   gap: 2em;
 
   animation: rotationLevel 0.8s ease forwards;
@@ -239,7 +246,7 @@
   align-items: center;
   width: 100%;
 
-  top: 12vh;
+  top: 16vh;
   left: 0vw;
   gap: 5em;
   animation: var(--animation-Fast);
@@ -253,7 +260,7 @@
   align-items: center;
   width: 100%;
 
-  top: 10vw;
+  top: 16vh;
   left: 0vw;
   gap: 5em;
   animation: var(--animation-First);
@@ -278,13 +285,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 2vh;
   h2 {
-    font-size: 3rem;
+    font-size: 2.5vw;
     text-align: center;
   }
   p {
-    font-size: 1.2rem;
+    font-size: 1vw;
   }
   img {
     position: relative;
@@ -300,7 +307,7 @@
   cursor: pointer;
   background-color: transparent;
   color: whitesmoke;
-  font-size: 3.5rem;
+  font-size: 3vw;
   &:hover {
     border: 5px solid #ffd700;
     filter: drop-shadow(0 0 0.1rem #ffd700);
@@ -313,7 +320,7 @@
   cursor: pointer;
   background-color: transparent;
   color: whitesmoke;
-  font-size: 3.5rem;
+  font-size: 3vw;
   animation: menuScale 0.4s ease forwards;
   &:hover {
     border: 5px solid #ffd700;
@@ -362,30 +369,33 @@
     height: 100vh;
     background-color: rgba(24, 24, 24, 0.96);
   }
+  .backSVG {
+    position: absolute;
+    display: block;
+    width: 12vw;
+    top: 2vh;
+    left: 5vw;
+    z-index: 4;
+  }
   .rotation {
     position: fixed;
     display: flex;
     flex-direction: column;
     gap: 2em;
     width: 90vw;
+    animation: scaleZero 1s ease forwards;
   }
   .rotation2 {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    width: 90vw;
-    animation: scaleZero 1s ease forwards;
-    z-index: 3;
+    display: none;
   }
   @keyframes scaleZero {
     0% {
-      opacity: 1;
-      transform: scale(1);
-    }
-    100% {
       opacity: 0;
       transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
     }
   }
 
@@ -450,8 +460,8 @@
     justify-content: center;
     right: 0em;
     background-color: rgb(39, 39, 39);
-    border-left: 3px solid #ffd700;
-    border-right: 3px solid #ffd700;
+    border-left: none;
+    border-right: none;
     width: 100vw;
 
     animation: levelANiMobile 1s ease forwards;
@@ -494,8 +504,8 @@
 
     right: 0vw;
     background-color: rgb(39, 39, 39);
-    border-left: 3px solid #ffd700;
-    border-right: 3px solid #ffd700;
+    border-left: none;
+    border-right: none;
     height: 100%;
     width: 100%;
 
@@ -503,12 +513,10 @@
   }
   @keyframes levelANiMobile {
     0% {
-      border-right: 0px solid #ffd700;
       width: 0;
     }
     100% {
       width: 100vw;
-      border-right: 5px solid #ffd700;
     }
   }
   .contentNone {
@@ -523,7 +531,6 @@
     height: 100%;
     overflow-y: scroll;
     align-items: center;
-    top: 10vh;
 
     animation: opacityContent 0.8s ease forwards;
   }
@@ -538,7 +545,15 @@
     gap: 2em;
     left: 0;
     top: 0vh;
-    animation: none;
+    animation: ZeroScaleLevelContainerMobile 1.5s ease forwards;
+  }
+  @keyframes ZeroScaleLevelContainerMobile {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
   .rotationLevelContainerRotation {
     position: relative;
@@ -546,17 +561,18 @@
     flex-direction: column;
     justify-content: center;
     left: 0vw;
-    top: 0vh;
-    height: 20em;
+    top: 10vh;
+    margin: 2vh 0;
+    height: auto;
     gap: 0;
-    animation: rotationLevel 0.8s ease forwards;
+    animation: rotationLevelMobile 0.8s ease forwards;
   }
-  @keyframes rotationLevel {
+  @keyframes rotationLevelMobile {
     0% {
-      top: 0vh;
+      top: 30vh;
     }
     100% {
-      opacity: -20vh;
+      top: 10vh;
     }
   }
   .BookSectionFast {
@@ -568,7 +584,7 @@
     align-items: center;
     width: 100%;
 
-    top: 0vw;
+    top: 10vh;
     left: 0vw;
     gap: 5em;
     animation: var(--animation-Fast);
@@ -582,7 +598,7 @@
     align-items: center;
     width: 100%;
 
-    top: 10vw;
+    top: 10vh;
     left: 0vw;
     gap: 5em;
     animation: var(--animation-First);
@@ -609,15 +625,16 @@
     align-items: center;
     gap: 1em;
     h2 {
-      font-size: 3rem;
+      font-size: 10vw;
       text-align: center;
     }
     p {
-      font-size: 1.2rem;
+      font-size: 5vw;
     }
     img {
       position: relative;
-      width: 60%;
+      width: 60vw;
+      border-radius: 1vw;
     }
   }
 
@@ -627,7 +644,7 @@
     cursor: pointer;
     background-color: transparent;
     color: whitesmoke;
-    font-size: 10vw;
+    font-size: 9vw;
     &:hover {
       border: 5px solid #ffd700;
       filter: drop-shadow(0 0 0.1rem #ffd700);

@@ -9,6 +9,8 @@ import NewMoney from "../images/NewMoney.jpg";
 import NewMoneyBanner from "../images/NewMoneyBanner.jpg";
 import LearnToInvest from "../images/LearnToInvest.jpg";
 import LearnToInvestBanner from "../images/LearnToInvestBanner.jpg";
+import ThePlainBagelLogo from "../images/plain_bagel_logo.jpg";
+import ThePlainBagelBanner from "../images/plain_bagel.jpg";
 
 export default function Youtubers(props) {
   const youtubersInfoObject = [
@@ -35,6 +37,12 @@ export default function Youtubers(props) {
       banner: LearnToInvestBanner,
       name: "Learn to Invest",
       link: "https://www.youtube.com/@LearntoInvest",
+    },
+    {
+      img: ThePlainBagelLogo,
+      banner: ThePlainBagelBanner,
+      name: "The Plain Bagel",
+      link: "https://www.youtube.com/@ThePlainBagel",
     },
   ];
   const [youtubersInfo, setyoutubersInfo] = useState(youtubersInfoObject);

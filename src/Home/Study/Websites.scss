@@ -71,6 +71,7 @@
   z-index: 1;
   border-radius: 1.5vw;
   cursor: pointer;
+  filter: drop-shadow(10px 10px 5px rgb(0, 0, 0));
 }
 
 @keyframes textAreaOpacity {
@@ -123,7 +124,7 @@
     overflow-x: hidden;
     justify-content: unset;
     align-items: center;
-    animation: var(--animation-BannerYT);
+    animation: var(--animation-BannerYT-Mobile);
     top: 0vh;
   }
 
