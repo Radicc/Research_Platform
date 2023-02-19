@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/Research_Platform/static/css/main.f75738ba.css",
-    "main.js": "/Research_Platform/static/js/main.63b4aa32.js",
+    "main.css": "/Research_Platform/static/css/main.f42d54f7.css",
+    "main.js": "/Research_Platform/static/js/main.0a54752e.js",
     "static/js/787.28cb0dcd.chunk.js": "/Research_Platform/static/js/787.28cb0dcd.chunk.js",
-    "static/media/wallstreet_3.jpg": "/Research_Platform/static/media/wallstreet_3.6fc96f5f9972fbfcca3d.jpg",
-    "static/media/wallstreet_1.jpg": "/Research_Platform/static/media/wallstreet_1.eb625b4703a8581982b4.jpg",
-    "static/media/wallstreet_2_1.jpg": "/Research_Platform/static/media/wallstreet_2_1.2fbd53b84086c17d4c7a.jpg",
+    "static/media/wallstreet_3.jpg": "/Research_Platform/static/media/wallstreet_3.2a31d859226895ef3aea.jpg",
+    "static/media/wallstreet_2_1.jpg": "/Research_Platform/static/media/wallstreet_2_1.958bc16c141de061a9e7.jpg",
     "static/media/background2.jpg": "/Research_Platform/static/media/background2.088cb63cc481aa6fdb77.jpg",
+    "static/media/RetirementCalculator12.jpg": "/Research_Platform/static/media/RetirementCalculator12.64c72e33ee713e213a30.jpg",
     "static/media/yahooBanner.jpg": "/Research_Platform/static/media/yahooBanner.73b039167083d922b8fb.jpg",
     "static/media/SeakingAlphaBanner.jpg": "/Research_Platform/static/media/SeakingAlphaBanner.bec88a80bd4cf5fb5ca9.jpg",
     "static/media/tradingViewBanner.jpg": "/Research_Platform/static/media/tradingViewBanner.47454a0bc9cde4ccf78e.jpg",
@@ -24,18 +24,19 @@
     "static/media/yahooLogo.png": "/Research_Platform/static/media/yahooLogo.cb1450de5a79801a5bba.png",
     "static/media/The_Intelligent_Investor.jpeg": "/Research_Platform/static/media/The_Intelligent_Investor.29e85703789e46ecde3a.jpeg",
     "static/media/Psychology_of_Money.jpg": "/Research_Platform/static/media/Psychology_of_Money.7ebec949173c213537e4.jpg",
+    "static/media/StudySection.jpg": "/Research_Platform/static/media/StudySection.fbb5760b0ec8d352a53f.jpg",
     "static/media/Good_Stocks_Cheap.jpg": "/Research_Platform/static/media/Good_Stocks_Cheap.698751ce4029f1a3cb03.jpg",
     "static/media/stock_analyzerWhite.png": "/Research_Platform/static/media/stock_analyzerWhite.7c7a129445edb95a1bc6.png",
     "static/media/tradingViewLogo.png": "/Research_Platform/static/media/tradingViewLogo.89081890d4bcef2585c7.png",
     "static/media/heartSVG.png": "/Research_Platform/static/media/heartSVG.f0a6949edaab2c39b5ed.png",
     "static/media/backSVG.svg": "/Research_Platform/static/media/backSVG.e583dc785cfb22294cb2fe4e1d273782.svg",
     "index.html": "/Research_Platform/index.html",
-    "main.f75738ba.css.map": "/Research_Platform/static/css/main.f75738ba.css.map",
-    "main.63b4aa32.js.map": "/Research_Platform/static/js/main.63b4aa32.js.map",
+    "main.f42d54f7.css.map": "/Research_Platform/static/css/main.f42d54f7.css.map",
+    "main.0a54752e.js.map": "/Research_Platform/static/js/main.0a54752e.js.map",
     "787.28cb0dcd.chunk.js.map": "/Research_Platform/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f75738ba.css",
-    "static/js/main.63b4aa32.js"
+    "static/css/main.f42d54f7.css",
+    "static/js/main.0a54752e.js"
   ]
 }
