@@ -59,7 +59,7 @@ export default function Websites(props) {
     for (let i = 0; i < y.length; i = i + 2) {
       content.push(
         <div
-          onClick={() => (window.location.href = y[i].link)}
+          onClick={() => window.open(y[i].link, "_blank")}
           className="WebsitesComponent"
         >
           <img className="Logo" src={y[i].img} />
@@ -76,7 +76,7 @@ export default function Websites(props) {
     for (let i = 1; i < y.length; i = i + 2) {
       content2.push(
         <div
-          onClick={() => (window.location.href = y[i].link)}
+          onClick={() => window.open(y[i].link, "_blank")}
           className="WebsitesComponent"
         >
           <img className="Logo" src={y[i].img} />

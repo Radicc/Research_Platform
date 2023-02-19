@@ -62,7 +62,7 @@ export default function Youtubers(props) {
     for (let i = 0; i < y.length; i++) {
       content.push(
         <div
-          onClick={() => (window.location.href = y[i].link)}
+          onClick={() => window.open(y[i].link, "_blank")}
           className="YoutubeComponent"
         >
           <img className="profileIcon" src={y[i].img} />
