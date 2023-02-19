@@ -42,7 +42,7 @@ export default function Navbar(props) {
   return (
     <div className={props.navbarClass}>
       <div className={backBurger}>
-        <NavLink onClick={handleClickSVG} to="/Research_Platform">
+        <NavLink onClick={handleClickSVG} to=".">
           <img className="iconSVG" src={homeSVG} />
         </NavLink>
 

@@ -25,7 +25,7 @@ const RouteSwitch = () => {
       <Navbar navbarClass={navbarClass} menuClass={menuClass} />
       <Routes>
         <Route
-          path="/Research_Platform"
+          path="/"
           element={
             <Home navbarClass={navbarClass} setNavbarClass={setNavbarClass} />
           }
