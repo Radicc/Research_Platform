@@ -12,11 +12,9 @@ export default function FirstSection() {
       </div>
       <div className="featureContainer">
         <NavLink to="/Study" className="contentFeatureContainer">
-          <h1>Study</h1>
           <img src={study} />
         </NavLink>
         <NavLink to="/RetirmentCalculator" className="contentFeatureContainer">
-          <h1>Retirement Calculator</h1>
           <img src={calculatorOldMan} />
         </NavLink>
       </div>
