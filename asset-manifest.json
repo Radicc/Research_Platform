@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/Research_Platform/static/css/main.a283ec1e.css",
-    "main.js": "/Research_Platform/static/js/main.50221d08.js",
+    "main.css": "/Research_Platform/static/css/main.0367d1e9.css",
+    "main.js": "/Research_Platform/static/js/main.82af4b9e.js",
     "static/js/787.28cb0dcd.chunk.js": "/Research_Platform/static/js/787.28cb0dcd.chunk.js",
     "static/media/wallstreet_3.jpg": "/Research_Platform/static/media/wallstreet_3.2a31d859226895ef3aea.jpg",
     "static/media/wallstreet_2_1.jpg": "/Research_Platform/static/media/wallstreet_2_1.958bc16c141de061a9e7.jpg",
     "static/media/background2.jpg": "/Research_Platform/static/media/background2.088cb63cc481aa6fdb77.jpg",
-    "static/media/RetirementCalculator12.jpg": "/Research_Platform/static/media/RetirementCalculator12.64c72e33ee713e213a30.jpg",
+    "static/media/RetirementCalculator1.jpg": "/Research_Platform/static/media/RetirementCalculator1.48da029b783b18f2be49.jpg",
     "static/media/yahooBanner.jpg": "/Research_Platform/static/media/yahooBanner.73b039167083d922b8fb.jpg",
     "static/media/SeakingAlphaBanner.jpg": "/Research_Platform/static/media/SeakingAlphaBanner.bec88a80bd4cf5fb5ca9.jpg",
     "static/media/tradingViewBanner.jpg": "/Research_Platform/static/media/tradingViewBanner.47454a0bc9cde4ccf78e.jpg",
@@ -31,12 +31,12 @@
     "static/media/heartSVG.png": "/Research_Platform/static/media/heartSVG.f0a6949edaab2c39b5ed.png",
     "static/media/backSVG.svg": "/Research_Platform/static/media/backSVG.e583dc785cfb22294cb2fe4e1d273782.svg",
     "index.html": "/Research_Platform/index.html",
-    "main.a283ec1e.css.map": "/Research_Platform/static/css/main.a283ec1e.css.map",
-    "main.50221d08.js.map": "/Research_Platform/static/js/main.50221d08.js.map",
+    "main.0367d1e9.css.map": "/Research_Platform/static/css/main.0367d1e9.css.map",
+    "main.82af4b9e.js.map": "/Research_Platform/static/js/main.82af4b9e.js.map",
     "787.28cb0dcd.chunk.js.map": "/Research_Platform/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a283ec1e.css",
-    "static/js/main.50221d08.js"
+    "static/css/main.0367d1e9.css",
+    "static/js/main.82af4b9e.js"
   ]
 }
