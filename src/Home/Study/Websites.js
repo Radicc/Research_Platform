@@ -37,7 +37,7 @@ export default function Websites(props) {
       img: tikrLogo,
       banner: tikrBanner,
       name: "Tikr Terminal",
-      link: "https://www.tikr.com/",
+      link: "https://app.tikr.com/register?ref=v3xzcz",
       text: "Invest like Wall Street with TIKR Terminal - Find the best stocks, follow top investors, quickly analyze businesses, and monitor your portfolio with TIKR.",
     },
   ];
