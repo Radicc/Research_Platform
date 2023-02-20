@@ -1,14 +1,15 @@
 .RetirmentCalculator {
   position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 
   background-image: url(../images/background2.jpg);
+  background-size: cover;
   animation: FadeIN 0.8s ease forwards;
+  gap: 2vw;
 }
 @keyframes FadeIN {
   0% {
@@ -27,11 +28,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10em 0;
-  padding: 5em 0;
-  gap: 5em;
-
-  width: 60%;
+  top: 5vh;
+  padding: 1vw;
+  width: 40%;
+  margin-left: 1vw;
   border-radius: 2em;
   background-color: #4d5061f8;
   box-shadow: 0px 3px #ffd700;
@@ -67,8 +67,8 @@
   }
   input {
     position: relative;
-    width: 70%;
-    height: 5vh;
+    width: 65%;
+    height: 4vh;
     cursor: auto;
     padding-left: 1vw;
     border: 3px solid #ffd700;
@@ -138,15 +138,28 @@
   position: relative;
   display: flex;
 
-  width: 70%;
+  width: 60%;
   height: 15vh;
-  background-color: #4d5061;
+  top: -27vh;
+  margin-right: 1vw;
+  background-color: #4d5061f8;
   box-shadow: 0px 3px #ffd700;
   gap: 0;
   border-radius: 1em;
-  margin-bottom: 15vh;
-
   justify-content: center;
+}
+.submitSolution2 {
+  position: relative;
+  display: flex;
+
+  width: 60%;
+  height: 80vh;
+  top: 5vh;
+  margin-right: 1vw;
+  background-color: #4d5061f8;
+  box-shadow: 0px 3px #ffd700;
+  gap: 0;
+  border-radius: 1.5vw;
 }
 .solution {
   position: relative;
@@ -158,18 +171,17 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  justify-content: center;
   align-items: center;
   text-align: center;
-
+  margin-top: 1vw;
   gap: 2em;
   h2 {
     color: #ffd700;
-    font-size: 1.5rem;
+    font-size: 1vw;
   }
   p {
     color: whitesmoke;
-    font-size: 1.5rem;
+    font-size: 1vw;
   }
   .colorGreen {
     color: rgb(0, 177, 0);

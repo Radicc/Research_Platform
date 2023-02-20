@@ -12,12 +12,13 @@ What can you find on the website?:
 3,🌐Websites
 
 ![Alt text](/src/Home/images/StudyBooks.jpg "Study resources")
+![Alt text](/src/Home/images/StudyYoutubers.jpg "Study resources")
+![Alt text](/src/Home/images/StudyWebsites.jpg "Study resources")
 
 ● Retirement calculator 👴:
 Now you can calculate how much money you need to save for retirement.
 
 ![Alt text](/src/Home/images/RetirementCalculator1.jpg "Retirement calculator")
-![Alt text](/src/Home/images/RetirementCalculator2.jpg "Retirement calculator")
 
 The calculator takes 10 inputs for calculation:
 

@@ -19,7 +19,7 @@ export default function RetirmentCalculator(props) {
     CurrentAnnualIncome: 0,
     IncomeInRetirement: 0,
 
-    Enough: "YES",
+    Enough: "?",
     Save: 0,
     Growth: 0,
     Balance: 0,
@@ -216,7 +216,7 @@ export default function RetirmentCalculator(props) {
               />
             </div>
             <div className="inputBlock">
-              <p>What % of your income do you want to have in retirement?</p>
+              <p>% of your income in retirement?</p>
               <input
                 placeholder="0%"
                 name="IncomeInRetirement"
