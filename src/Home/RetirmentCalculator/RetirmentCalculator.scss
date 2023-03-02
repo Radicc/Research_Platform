@@ -29,15 +29,16 @@
   justify-content: center;
   align-items: center;
   top: 5vh;
+  gap: 1vw;
   padding: 1vw;
-  width: 40%;
+  width: 45%;
   margin-left: 1vw;
   border-radius: 2em;
   background-color: #4d5061f8;
   box-shadow: 0px 3px #ffd700;
   h1 {
     color: whitesmoke;
-    font-size: 4rem;
+    font-size: 3.5vw;
     margin: 0;
     padding: 0;
   }
@@ -57,12 +58,12 @@
   height: 60vh;
   justify-content: center;
   align-items: center;
-  gap: 2em;
+  gap: 3vh;
   p {
     width: 70%;
     margin: 0;
     padding: 0;
-    font-size: 0.8rem;
+    font-size: 0.7vw;
     color: whitesmoke;
   }
   input {
@@ -71,8 +72,8 @@
     height: 4vh;
     cursor: auto;
     padding-left: 1vw;
-    border: 3px solid #ffd700;
-    border-radius: 3px;
+    border: 0.2vw solid #ffd700;
+    border-radius: 0.2vw;
     outline: none;
     background-color: #00000059;
     color: #ffd700;
@@ -80,7 +81,7 @@
     text-decoration: none;
     &::placeholder {
       color: whitesmoke;
-      font-size: 0.9rem;
+      font-size: 0.8vw;
     }
   }
 }
@@ -98,7 +99,7 @@
     width: 50%;
     margin: 0;
     padding: 0;
-    font-size: 0.8rem;
+    font-size: 0.7vw;
     color: whitesmoke;
   }
   input {
@@ -107,7 +108,7 @@
     height: 5vh;
     cursor: auto;
     padding-left: 1vw;
-    border: 3px solid #ffd700;
+    border: 3vw solid #ffd700;
     border-radius: 3px;
     outline: none;
     background-color: #00000059;
@@ -116,7 +117,7 @@
     text-decoration: none;
     &::placeholder {
       color: whitesmoke;
-      font-size: 0.9rem;
+      font-size: 0.8vw;
     }
   }
 }
@@ -127,7 +128,7 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  gap: 0.5em;
+  gap: 0.5vw;
 }
 .buttonContainer {
   position: relative;
@@ -152,7 +153,7 @@
   position: relative;
   display: flex;
 
-  width: 60%;
+  width: 55%;
   height: 80vh;
   top: 5vh;
   margin-right: 1vw;

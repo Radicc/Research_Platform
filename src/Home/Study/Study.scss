@@ -23,7 +23,7 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 2vw;
   width: 35vw;
   animation: opacityContent s ease forwards;
 }
@@ -54,14 +54,14 @@
   position: relative;
   display: flex;
   justify-content: center;
-  border: 5px solid whitesmoke;
+  border: 0.4vw solid whitesmoke;
   cursor: pointer;
   background-color: transparent;
   color: whitesmoke;
   font-size: 3vw;
   z-index: 3;
   &:hover {
-    border: 5px solid #ffd700;
+    border: 0.4vw solid #ffd700;
     filter: drop-shadow(0 0 0.1rem #ffd700);
     color: #ffd700;
   }
@@ -217,9 +217,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 20em;
+  height: auto;
   left: 50vw;
-  top: 40vh;
+  top: 30vh;
   gap: 2em;
 
   animation: rotationLevel 0.8s ease forwards;

@@ -4,14 +4,57 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  gap: 5vw;
+  margin: 15vh 0;
   h1 {
+    text-align: center;
     position: relative;
-    color: whitesmoke;
-    font-size: 4rem;
+    color: #ffd700;
+    font-size: 2vw;
     margin: 0;
     padding: 0;
-    top: 10vh;
+
+    width: 50%;
+  }
+  p {
+    text-align: center;
+    position: relative;
+    color: whitesmoke;
+    font-size: 1.1vw;
+    margin: 0;
+    padding: 0;
+
+    width: 50%;
+  }
+  a {
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    color: rgb(70, 194, 251);
+    font-size: 1.3vw;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+}
+.containerStocks {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .Stocks {
+    h1 {
+      font-size: 2.5vw;
+    }
+    p {
+      font-size: 1.3vw;
+    }
+    a {
+      font-size: 1.5vw;
+    }
   }
 }
