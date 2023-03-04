@@ -2,48 +2,90 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  padding: 12vh 2vh 8vh 2vh;
+  overflow: hidden;
+}
+.containerSectionStocks {
+  position: relative;
+  display: flex;
+  gap: 2vh;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 5vw;
-  margin: 15vh 0;
-  h1 {
-    text-align: center;
-    position: relative;
-    color: #ffd700;
-    font-size: 2vw;
-    margin: 0;
-    padding: 0;
-
-    width: 50%;
-  }
-  p {
-    text-align: center;
-    position: relative;
-    color: whitesmoke;
-    font-size: 1.1vw;
-    margin: 0;
-    padding: 0;
-
-    width: 50%;
-  }
-  a {
-    text-align: center;
-    text-decoration: none;
-    position: relative;
-    color: rgb(70, 194, 251);
-    font-size: 1.3vw;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-  }
 }
 .containerStocks {
   position: relative;
   display: flex;
   flex-direction: column;
-
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 20vw;
+  height: 25vh;
+  padding: 0.5vw;
+  gap: 0.5vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  background-color: #4d5061f8;
+  box-shadow: 0px 3px #ffd700;
+  text-align: center;
+  z-index: 0;
+
+  &:hover {
+    animation: scaleNews 0.5s ease forwards;
+    filter: drop-shadow(0 -0.5mm 1mm #00eeff);
+    box-shadow: 0px 3px #00eeff;
+    z-index: 4;
+    h1 {
+      color: #00eeff;
+    }
+    h5 {
+      color: #00eeff;
+    }
+  }
+  h1 {
+    position: relative;
+    color: #ffd700;
+    font-size: 1vw;
+    padding: 0;
+  }
+  p {
+    align-items: center;
+    display: flex;
+
+    position: relative;
+    color: whitesmoke;
+    font-size: 0.6vw;
+    margin: 0;
+    padding: 0;
+    height: 65%;
+  }
+  h5 {
+    position: relative;
+    color: #ffd700;
+    font-size: 0.5vw;
+    margin: 0;
+    padding: 0;
+    height: 5%;
+  }
+}
+@keyframes scaleNews {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.4);
+  }
+}
+@keyframes loadingNews {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .Stocks {

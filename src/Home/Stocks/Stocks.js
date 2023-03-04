@@ -34,19 +34,25 @@ export default function Stocks() {
   }, [data]);
 
   const renderFilteredData = (y) => {
-    console.log(y[0].title);
     setSection([]);
     for (let i = 0; i < y.length; i++) {
       setSection((prevArray) => [
         ...prevArray,
-        <div className="containerStocks">
+        <div
+          onClick={() => window.open(y[i].link, "_blank")}
+          className="containerStocks"
+        >
           <h1>{y[i].title}</h1>
           <p>{y[i].description}</p>
-          <a href={y[i].link}>LINK</a>
+          <h5>{y[i].pubDate}</h5>
         </div>,
       ]);
     }
   };
 
-  return <div className="Stocks">{section}</div>;
+  return (
+    <div className="Stocks">
+      <div className="containerSectionStocks"> {section}</div>
+    </div>
+  );
 }
