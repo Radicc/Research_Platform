@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/Research_Platform/static/css/main.3a6c2438.css",
-    "main.js": "/Research_Platform/static/js/main.4ab7263c.js",
+    "main.css": "/Research_Platform/static/css/main.e2a96733.css",
+    "main.js": "/Research_Platform/static/js/main.66a1231e.js",
     "static/js/787.28cb0dcd.chunk.js": "/Research_Platform/static/js/787.28cb0dcd.chunk.js",
     "static/media/wallstreet_3.jpg": "/Research_Platform/static/media/wallstreet_3.2a31d859226895ef3aea.jpg",
     "static/media/wallstreet_2_1.jpg": "/Research_Platform/static/media/wallstreet_2_1.958bc16c141de061a9e7.jpg",
     "static/media/background2.jpg": "/Research_Platform/static/media/background2.088cb63cc481aa6fdb77.jpg",
+    "static/media/StockNewsSection.jpg": "/Research_Platform/static/media/StockNewsSection.0b17deb029afa874634f.jpg",
     "static/media/RetirementCalculator1.jpg": "/Research_Platform/static/media/RetirementCalculator1.48da029b783b18f2be49.jpg",
     "static/media/yahooBanner.jpg": "/Research_Platform/static/media/yahooBanner.73b039167083d922b8fb.jpg",
     "static/media/SeakingAlphaBanner.jpg": "/Research_Platform/static/media/SeakingAlphaBanner.bec88a80bd4cf5fb5ca9.jpg",
@@ -31,12 +32,12 @@
     "static/media/heartSVG.png": "/Research_Platform/static/media/heartSVG.f0a6949edaab2c39b5ed.png",
     "static/media/backSVG.svg": "/Research_Platform/static/media/backSVG.e583dc785cfb22294cb2fe4e1d273782.svg",
     "index.html": "/Research_Platform/index.html",
-    "main.3a6c2438.css.map": "/Research_Platform/static/css/main.3a6c2438.css.map",
-    "main.4ab7263c.js.map": "/Research_Platform/static/js/main.4ab7263c.js.map",
+    "main.e2a96733.css.map": "/Research_Platform/static/css/main.e2a96733.css.map",
+    "main.66a1231e.js.map": "/Research_Platform/static/js/main.66a1231e.js.map",
     "787.28cb0dcd.chunk.js.map": "/Research_Platform/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a6c2438.css",
-    "static/js/main.4ab7263c.js"
+    "static/css/main.e2a96733.css",
+    "static/js/main.66a1231e.js"
   ]
 }
