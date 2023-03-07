@@ -54,6 +54,9 @@
   gap: 5vw;
   padding: 2vw 0;
 }
+.textareaStockNews {
+  display: none;
+}
 .contentFeatureContainer {
   position: relative;
   display: flex;
@@ -70,6 +73,30 @@
   &:hover {
     filter: drop-shadow(0 -2mm 3mm #ffd700);
     animation: scaleBanner 0.5s ease forwards;
+
+    .textareaStockNews {
+      position: absolute;
+      flex-direction: column;
+      display: flex;
+      gap: 0.8vh;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      opacity: 0;
+      cursor: pointer;
+
+      border-radius: 1.6vw;
+      bottom: 0vh;
+      background-color: rgba(0, 0, 0, 0.699);
+      z-index: 2;
+      animation: textAreaOpacity 0.5s ease forwards;
+      h2 {
+        font-size: 3vw;
+        width: 100%;
+      }
+    }
   }
 
   h1 {

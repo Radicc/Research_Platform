@@ -5,7 +5,7 @@ import "./sass/_burgerMenu.scss";
 import "./sass/_navbar.scss";
 
 import stockAnalyzer from "./images/stock_analyzerWhite.png";
-import stocks from "./images/stocksWhite.png";
+import stocks from "./images/stock_news.png";
 import study from "./images/studyWhite.png";
 import calculatorOldMan from "./images/calculatorOldManWhite.png";
 import heartSVG from "./images/heartSVG.png";
