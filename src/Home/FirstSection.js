@@ -13,7 +13,7 @@ export default function FirstSection() {
       </div>
       <div className="featureContainer">
         <NavLink to="/Study" className="contentFeatureContainer">
-          <img src={stockNewsSection} />
+          <img src={calculatorOldMan} />
           <div className="textareaStockNews">
             <h2 className="titul">Stock News</h2>
           </div>
@@ -27,7 +27,7 @@ export default function FirstSection() {
       </div>
       <div className="featureContainer">
         <NavLink to="/Stocks" className="contentFeatureContainer">
-          <img src={calculatorOldMan} />
+          <img src={stockNewsSection} />
           <div className="textareaStockNews">
             <h2 className="titul">Retirement Calculator</h2>
           </div>
