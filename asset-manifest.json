@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Research_Platform/static/css/main.8b58e3df.css",
+    "main.css": "/Research_Platform/static/css/main.6ded4304.css",
     "main.js": "/Research_Platform/static/js/main.1ee571d0.js",
     "static/js/787.28cb0dcd.chunk.js": "/Research_Platform/static/js/787.28cb0dcd.chunk.js",
     "static/media/wallstreet_3.jpg": "/Research_Platform/static/media/wallstreet_3.2a31d859226895ef3aea.jpg",
@@ -33,12 +33,12 @@
     "static/media/heartSVG.png": "/Research_Platform/static/media/heartSVG.f0a6949edaab2c39b5ed.png",
     "static/media/backSVG.svg": "/Research_Platform/static/media/backSVG.e583dc785cfb22294cb2fe4e1d273782.svg",
     "index.html": "/Research_Platform/index.html",
-    "main.8b58e3df.css.map": "/Research_Platform/static/css/main.8b58e3df.css.map",
+    "main.6ded4304.css.map": "/Research_Platform/static/css/main.6ded4304.css.map",
     "main.1ee571d0.js.map": "/Research_Platform/static/js/main.1ee571d0.js.map",
     "787.28cb0dcd.chunk.js.map": "/Research_Platform/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b58e3df.css",
+    "static/css/main.6ded4304.css",
     "static/js/main.1ee571d0.js"
   ]
 }
