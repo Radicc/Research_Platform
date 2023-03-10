@@ -9,7 +9,7 @@ export default function Stocks() {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "5ff7652132mshfd5344fae57d12bp1aac72jsn2afee6589cda",
+        "X-RapidAPI-Key": "d9bae2e3ebmsh7dcc8af6568a8aep105a80jsnfb597d003c75",
         "X-RapidAPI-Host": "yahoo-finance15.p.rapidapi.com",
       },
     };
