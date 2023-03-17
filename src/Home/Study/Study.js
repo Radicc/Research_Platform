@@ -8,8 +8,8 @@ import BackSVG from "../images/backSVG.svg";
 export default function Study(props) {
   const [menuRotation, setMenuRotation] = useState("rotation");
   const [levelRotation, setLevelRotation] = useState("rotationLevelContainer");
-  const [Content, setContent] = useState("contentNone");
 
+  const [Content, setContent] = useState("contentNone");
   const [propRef, setPropRef] = useState("");
 
   const contentBookDefault = "BookSection";
@@ -246,6 +246,7 @@ export default function Study(props) {
               Advanced
             </button>
           </div>
+
           <div className={levelMenu.BeginnerElements}>
             <Books props={propRef} />
           </div>

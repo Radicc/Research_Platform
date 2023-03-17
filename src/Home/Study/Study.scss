@@ -1,6 +1,7 @@
 @import "../sass/animation";
 @import "../Study/Youtube.scss";
 @import "../Study/Websites.scss";
+
 .Study {
   position: relative;
   display: flex;
@@ -295,7 +296,6 @@
   }
   img {
     position: relative;
-    width: 18vw;
     border-radius: 0.8vw;
     filter: drop-shadow(10px 10px 5px rgb(0, 0, 0));
   }
