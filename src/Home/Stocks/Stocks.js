@@ -1,9 +1,13 @@
 import "./Stocks.scss";
 import { useState, useEffect } from "react";
 
-export default function Stocks() {
+export default function Stocks(props) {
   const [data, setData] = useState([]);
   const [section, setSection] = useState([]);
+
+  if (props.navbarClass === "header2") {
+    props.setNavbarClass("header3");
+  }
 
   const fetchMe = () => {
     const options = {

@@ -23,6 +23,7 @@ const RouteSwitch = () => {
   return (
     <Router>
       <Navbar navbarClass={navbarClass} menuClass={menuClass} />
+
       <Routes>
         <Route
           path="/"
@@ -30,6 +31,7 @@ const RouteSwitch = () => {
             <Home navbarClass={navbarClass} setNavbarClass={setNavbarClass} />
           }
         />
+
         <Route
           path="/RetirmentCalculator"
           element={
@@ -39,14 +41,23 @@ const RouteSwitch = () => {
             />
           }
         />
-        <Route path="/Stocks" element={<Stocks />} />
+
+        <Route
+          path="/Stocks"
+          element={
+            <Stocks navbarClass={navbarClass} setNavbarClass={setNavbarClass} />
+          }
+        />
+
         <Route path="/StocksAnalyzer" element={<StocksAnalyzer />} />
+
         <Route
           path="/Study"
           element={
             <Study navbarClass={navbarClass} setNavbarClass={setNavbarClass} />
           }
         />
+
         <Route
           path="/FavoriteStocks"
           element={

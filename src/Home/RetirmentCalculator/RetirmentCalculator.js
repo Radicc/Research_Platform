@@ -47,7 +47,7 @@ export default function RetirmentCalculator(props) {
           Number(genState.CurrentSavings)
     );
     //let number2 = Number(genState.CurrentSavings);
-    let number0 = 0;
+
     let growth = 0;
     let EndNumber = [];
     let NormalSaving = Number(genState.CurrentSavings);
