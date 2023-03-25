@@ -76,8 +76,6 @@ export default function RetirmentCalculator(props) {
           Number(genState.IncreaseOfAnnualSavings / 100) * Number(AnnualSavings)
         );
       }
-      console.log(`number 1 : ${number1}`);
-      console.log(`AnnualSavings : ${AnnualSavings}`);
     }
     EndNumber.push(Number(NormalSaving));
     EndNumber.push(Number(number1));
@@ -93,8 +91,7 @@ export default function RetirmentCalculator(props) {
         RetirmentIncomeStart = RetirmentIncome;
       }
     }
-    console.log(`RetirmentIncome : ${RetirmentIncome}`);
-    console.log(`RetirmentIncomeStart : ${RetirmentIncomeStart}`);
+
     EndNumber.push(RetirmentIncomeStart);
 
     ////////////////////////////////////////////////////////////
@@ -117,7 +114,7 @@ export default function RetirmentCalculator(props) {
       EndNumber.push("YES");
       setColor("colorGreen");
     }
-    console.log(color);
+
     return EndNumber;
   };
 

@@ -9,12 +9,12 @@ export default function Study(props) {
   const [menuRotation, setMenuRotation] = useState("rotation");
   const [levelRotation, setLevelRotation] = useState("rotationLevelContainer");
 
-  const [Content, setContent] = useState("contentNone");
+  const [Content, setContent] = useState("displayNone");
   const [propRef, setPropRef] = useState("");
 
   const contentBookDefault = "BookSection";
   const contentBookFast = "BookSectionFast";
-  const contentNone = "contentNone"; /// DISPLAY NONE -> UI
+  const displayNone = "displayNone"; /// DISPLAY NONE -> UI
 
   const containerDefault = "containerSection"; //// DEFAULT STUDY BUTTON -> UI
   const containerSection = "containerSection selected"; //// SELECTED STUDY BUTTON -> UI
@@ -28,13 +28,13 @@ export default function Study(props) {
     ContentBook: contentBookDefault,
 
     Beginner: levelContainerDefault, // Beginner Button Books
-    BeginnerElements: contentNone, // Beginner Content
+    BeginnerElements: displayNone, // Beginner Content
 
     Intermediate: levelContainerDefault, // Intermediate Button Books
-    IntermediateElements: contentNone,
+    IntermediateElements: displayNone,
 
     Advanced: levelContainerDefault, // Advanced Button Books
-    AdvancedElements: contentNone,
+    AdvancedElements: displayNone,
   };
   const [levelMenu, setLevelMenu] = useState(defaultLevelMenu);
 
@@ -45,9 +45,9 @@ export default function Study(props) {
     Youtube: containerDefault,
     Websites: containerDefault,
 
-    ContentBooks: contentNone,
-    ContentYoutube: contentNone,
-    ContentWebsites: contentNone,
+    ContentBooks: displayNone,
+    ContentYoutube: displayNone,
+    ContentWebsites: displayNone,
   };
   const [menuScale, setMenutScale] = useState(defaultMenu);
 
@@ -72,8 +72,8 @@ export default function Study(props) {
         Intermediate: levelContainerNone,
         Advanced: levelContainerNone,
         BeginnerElements: levelMenu.ContentBook,
-        IntermediateElements: contentNone,
-        AdvancedElements: contentNone,
+        IntermediateElements: displayNone,
+        AdvancedElements: displayNone,
       }));
     } else if (number === "2") {
       setLevelMenu((prev) => ({
@@ -81,9 +81,9 @@ export default function Study(props) {
         Beginner: levelContainerNone,
         Intermediate: levelContainer,
         Advanced: levelContainerNone,
-        BeginnerElements: contentNone,
+        BeginnerElements: displayNone,
         IntermediateElements: levelMenu.ContentBook,
-        AdvancedElements: contentNone,
+        AdvancedElements: displayNone,
       }));
     } else {
       setLevelMenu((prev) => ({
@@ -91,8 +91,8 @@ export default function Study(props) {
         Beginner: levelContainerNone,
         Intermediate: levelContainerNone,
         Advanced: levelContainer,
-        BeginnerElements: contentNone,
-        IntermediateElements: contentNone,
+        BeginnerElements: displayNone,
+        IntermediateElements: displayNone,
         AdvancedElements: levelMenu.ContentBook,
       }));
     }
@@ -120,8 +120,8 @@ export default function Study(props) {
       Youtube: containerSectionNone,
       Websites: containerSectionNone,
       ContentBooks: "contentBooks",
-      ContentYoutube: "contentNone",
-      ContentWebsites: "contentNone",
+      ContentYoutube: displayNone,
+      ContentWebsites: displayNone,
     }));
   };
   //////////////////// BOOKS ////////////////////////
@@ -147,9 +147,9 @@ export default function Study(props) {
       Books: containerSectionNone,
       Youtube: containerSection,
       Websites: containerSectionNone,
-      ContentBooks: "contentNone",
+      ContentBooks: displayNone,
       ContentYoutube: "contentYoutube",
-      ContentWebsites: "contentNone",
+      ContentWebsites: displayNone,
     }));
     setLevelMenu(defaultLevelMenu);
     if (levelRotation === "rotationLevelContainerRotation") {
@@ -177,8 +177,8 @@ export default function Study(props) {
       Books: containerSectionNone,
       Youtube: containerSectionNone,
       Websites: containerSection,
-      ContentBooks: "contentNone",
-      ContentYoutube: "contentNone",
+      ContentBooks: displayNone,
+      ContentYoutube: displayNone,
       ContentWebsites: "contentWebsites",
     }));
     setLevelMenu(defaultLevelMenu);
@@ -190,7 +190,7 @@ export default function Study(props) {
 
   //////////////// BOOKS, YOUTUBE, WEBSITES ////////////////////////
   const handleBackButton = () => {
-    setContent("contentNone");
+    setContent(displayNone);
     setMenuRotation("rotation");
     setMenutScale((prev) => ({
       ...prev,
@@ -198,9 +198,9 @@ export default function Study(props) {
       Books: containerDefault,
       Youtube: containerDefault,
       Websites: containerDefault,
-      ContentBooks: "contentNone",
-      ContentYoutube: "contentNone",
-      ContentWebsites: "contentNone",
+      ContentBooks: displayNone,
+      ContentYoutube: displayNone,
+      ContentWebsites: displayNone,
     }));
   };
   return (

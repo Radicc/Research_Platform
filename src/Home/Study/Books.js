@@ -61,8 +61,8 @@ export default function Books(props) {
       difficulty: 3,
     },
   ];
-  const [bookInfo, setBookInfo] = useState(booksInfo);
 
+  const [bookInfo, setBookInfo] = useState(booksInfo);
   const [filteredArr, setFilteredArr] = useState(0);
   let content = [];
 

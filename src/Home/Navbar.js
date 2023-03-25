@@ -54,6 +54,7 @@ export default function Navbar(props) {
           <span></span>
           <span></span>
         </div>
+
         <NavLink onClick={handleClickSVG} to="/FavoriteStocks">
           <img className="iconSVG" src={heartSVG} />
         </NavLink>
@@ -67,6 +68,7 @@ export default function Navbar(props) {
                 <img src={stocks} />
               </span>
             </NavLink>
+
             <NavLink to="/Study" onClick={handleClick} className="container">
               <span className="circle">
                 <img src={study} />
