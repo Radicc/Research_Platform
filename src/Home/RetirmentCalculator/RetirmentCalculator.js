@@ -1,6 +1,7 @@
 import "./RetirmentCalculator.scss";
 import "./_calculateButton.scss";
 import { useState, useRef } from "react";
+import Button1 from "../Buttons/button1.tsx";
 
 export default function RetirmentCalculator(props) {
   if (props.navbarClass === "header2") {
@@ -223,17 +224,7 @@ export default function RetirmentCalculator(props) {
           </div>
         </div>
         <div className="buttonContainer">
-          <button
-            onClick={handleSubmit}
-            type="submit"
-            className="calculateButton"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Calculate
-          </button>
+          <Button1 text="Submit" onClick={handleSubmit} />
         </div>
       </div>
       <div className="submitSolution">
