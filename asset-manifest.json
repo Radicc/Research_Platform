@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Research_Platform/static/css/main.f059c9fa.css",
-    "main.js": "/Research_Platform/static/js/main.8a0678f6.js",
+    "main.css": "/Research_Platform/static/css/main.2beaae0a.css",
+    "main.js": "/Research_Platform/static/js/main.9b951d43.js",
     "static/js/787.28cb0dcd.chunk.js": "/Research_Platform/static/js/787.28cb0dcd.chunk.js",
-    "static/media/wallstreet_3.jpg": "/Research_Platform/static/media/wallstreet_3.2a31d859226895ef3aea.jpg",
     "static/media/wallstreet_2_1.jpg": "/Research_Platform/static/media/wallstreet_2_1.958bc16c141de061a9e7.jpg",
+    "static/media/wallstreet_5.jpg": "/Research_Platform/static/media/wallstreet_5.2587e65f90a80abae9d1.jpg",
     "static/media/background2.jpg": "/Research_Platform/static/media/background2.088cb63cc481aa6fdb77.jpg",
     "static/media/RetirementCalculator1.jpg": "/Research_Platform/static/media/RetirementCalculator1.48da029b783b18f2be49.jpg",
     "static/media/StockNewsSection.jpg": "/Research_Platform/static/media/StockNewsSection.b2b9b3b1e803f42f3bb2.jpg",
@@ -33,12 +33,12 @@
     "static/media/heartSVG.png": "/Research_Platform/static/media/heartSVG.f0a6949edaab2c39b5ed.png",
     "static/media/backSVG.svg": "/Research_Platform/static/media/backSVG.e583dc785cfb22294cb2fe4e1d273782.svg",
     "index.html": "/Research_Platform/index.html",
-    "main.f059c9fa.css.map": "/Research_Platform/static/css/main.f059c9fa.css.map",
-    "main.8a0678f6.js.map": "/Research_Platform/static/js/main.8a0678f6.js.map",
+    "main.2beaae0a.css.map": "/Research_Platform/static/css/main.2beaae0a.css.map",
+    "main.9b951d43.js.map": "/Research_Platform/static/js/main.9b951d43.js.map",
     "787.28cb0dcd.chunk.js.map": "/Research_Platform/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f059c9fa.css",
-    "static/js/main.8a0678f6.js"
+    "static/css/main.2beaae0a.css",
+    "static/js/main.9b951d43.js"
   ]
 }
