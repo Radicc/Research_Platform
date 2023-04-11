@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import "./sass/_firstSection.scss";
-import wallstreet_3 from "./images/wallstreet_3.jpg";
 import study from "./images/StudySection.jpg";
 import calculatorOldMan from "./images/RetirementCalculator1.jpg";
 import stockNewsSection from "./images/StockNewsSection.jpg";
