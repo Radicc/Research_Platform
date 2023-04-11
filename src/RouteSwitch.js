@@ -1,6 +1,6 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Stocks from "./Home/Stocks/Stocks";
+import Stocks from "./Home/Stocks/Stocks.tsx";
 import Study from "./Home/Study/Study";
 import StocksAnalyzer from "./Home/StocksAnalyzer/StocksAnalyzer";
 import RetirmentCalculator from "./Home/RetirmentCalculator/RetirmentCalculator";
@@ -45,7 +45,10 @@ const RouteSwitch = () => {
         <Route
           path="/Stocks"
           element={
-            <Stocks navbarClass={navbarClass} setNavbarClass={setNavbarClass} />
+            <Stocks
+              navbarClass={navbarClass}
+              setNavbarClass={(data) => setNavbarClass(data)}
+            />
           }
         />
 

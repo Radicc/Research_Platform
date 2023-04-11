@@ -15,12 +15,6 @@ import ThePlainBagelBanner from "../images/plain_bagel.jpg";
 export default function Youtubers(props) {
   const youtubersInfoObject = [
     {
-      img: EveryThingMoney,
-      banner: EveryThingMoneyBanner,
-      name: "EveryThingMoney",
-      link: "https://www.youtube.com/@EverythingMoney",
-    },
-    {
       img: SvenCarlin,
       banner: SvenCarlinBanner,
       name: "Sven Carlin, Ph.D.",
