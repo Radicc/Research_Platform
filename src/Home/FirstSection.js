@@ -4,7 +4,11 @@ import study from "./images/StudySection.jpg";
 import calculatorOldMan from "./images/RetirementCalculator1.jpg";
 import stockNewsSection from "./images/StockNewsSection.jpg";
 
-export default function FirstSection() {
+export default function FirstSection(props) {
+  if (props.navbarClass === "header2") {
+    props.setNavbarClass("header3");
+  }
+
   return (
     <div className="firstSection">
       <div className="titulContainer">

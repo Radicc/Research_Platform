@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "./sass/_burgerMenu.scss";
 import "./sass/_navbar.scss";
@@ -81,7 +80,7 @@ export default function Navbar(props) {
               className="container"
             >
               <span className="circleUnactive">
-                <img src={stockAnalyzer} alt="stockAnalyzer" />
+                <img src={stockAnalyzer} alt="StocksAnalyzer" />
               </span>
             </NavLink>
 
@@ -98,17 +97,5 @@ export default function Navbar(props) {
         </div>
       </div>
     </div>
-  );
-}
-
-function CustomLink({ to, children, ...props }) {
-  const path = window.location.pathname;
-
-  return (
-    <li className={path === to ? "active" : ""}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
   );
 }

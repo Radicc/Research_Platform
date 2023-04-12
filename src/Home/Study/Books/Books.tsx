@@ -84,6 +84,7 @@ const Books = ({ difficult }: Props) => {
               <div>
                 <img
                   onClick={() => window.open(item.link1, "_blank")}
+                  className="amazonIcon"
                   src={item.link1IMG}
                   alt={item.link1IMG}
                 />
