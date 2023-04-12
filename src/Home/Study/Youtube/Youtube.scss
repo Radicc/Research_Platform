@@ -1,13 +1,11 @@
-@import "../sass/_animation";
+@import "../../sass/_animation";
+
 .contentYoutube {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  gap: 2vw;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
   animation: var(--animation-BannerYT);
 }
 

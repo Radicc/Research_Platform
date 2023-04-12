@@ -1,8 +1,8 @@
 import "./Study.scss";
 import { useState } from "react";
 import Books from "./Books/Books.tsx";
-import Youtubers from "./Youtubers";
-import Websites from "./Websites";
+import Youtubers from "./Youtube/YoutubeGrid.tsx";
+import Websites from "./WebSites/WebSites.tsx";
 import BackSVG from "../images/backSVG.svg";
 
 export default function Study(props) {
