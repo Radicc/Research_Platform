@@ -62,8 +62,8 @@ export default function Websites(props) {
           onClick={() => window.open(y[i].link, "_blank")}
           className="WebsitesComponent"
         >
-          <img className="Logo" src={y[i].img} />
-          <img className="Banner" src={y[i].banner} />
+          <img className="Logo" src={y[i].img} alt="Logo" />
+          <img className="Banner" src={y[i].banner} alt="Banner" />
           <div className="textarea">
             <h2 className="titul">{y[i].name}</h2>
             <p className="text">{y[i].text}</p>
@@ -79,8 +79,8 @@ export default function Websites(props) {
           onClick={() => window.open(y[i].link, "_blank")}
           className="WebsitesComponent"
         >
-          <img className="Logo" src={y[i].img} />
-          <img className="Banner" src={y[i].banner} />
+          <img className="Logo" src={y[i].img} alt="Logo" />
+          <img className="Banner" src={y[i].banner} alt="Banner" />
           <div className="textarea">
             <h2 className="titul">{y[i].name}</h2>
             <p className="text">{y[i].text}</p>

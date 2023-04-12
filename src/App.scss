@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=Rubik+Vinyl&display=swap");
+@import "~bootstrap/scss/bootstrap";
 
 * {
   scroll-behavior: smooth;
@@ -13,6 +14,7 @@ html {
 .App {
   margin: 0;
   padding: 0;
+  background-color: rgb(11, 11, 11);
 }
 
 /* Smartphones (portrait and landscape) ----------- */

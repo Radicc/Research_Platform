@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import apiClient from "../services/api-client.ts";
-import { AxiosRequestConfig, CanceledError } from "axios";
+import { CanceledError } from "axios";
 
 export interface Game<T> {
   results: T[];
 }
 
-const useData = <T>(endpoint: string, requestConfig?: AxiosRequestConfig) => {
+const useData = <T>(endpoint: string) => {
   const [data, setData] = useState<T[]>([]);
   const [error, setError] = useState("");
   const [isLoading, setLoading] = useState(false);
@@ -16,7 +16,6 @@ const useData = <T>(endpoint: string, requestConfig?: AxiosRequestConfig) => {
     apiClient
       .get(endpoint, {
         signal: controller.signal,
-        ...requestConfig,
       })
       .then((res) => {
         if (res.data.status === 0) {

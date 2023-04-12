@@ -43,7 +43,7 @@ export default function Navbar(props) {
     <div className={props.navbarClass}>
       <div className={backBurger}>
         <NavLink onClick={handleClickSVG} to=".">
-          <img className="iconSVG" src={homeSVG} />
+          <img className="iconSVG" src={homeSVG} alt="homeSVG" />
         </NavLink>
 
         <div onClick={handleClick} id="nav-icon2" className={Burger}>
@@ -56,7 +56,7 @@ export default function Navbar(props) {
         </div>
 
         <NavLink onClick={handleClickSVG} to="/FavoriteStocks">
-          <img className="iconSVG" src={heartSVG} />
+          <img className="iconSVG" src={heartSVG} alt="heartSVG" />
         </NavLink>
       </div>
 
@@ -65,13 +65,13 @@ export default function Navbar(props) {
           <div className={props.menuClass}>
             <NavLink to="/Stocks" onClick={handleClick} className="container">
               <span className="circle">
-                <img src={stocks} />
+                <img src={stocks} alt="stocks" />
               </span>
             </NavLink>
 
             <NavLink to="/Study" onClick={handleClick} className="container">
               <span className="circle">
-                <img src={study} />
+                <img src={study} alt="study" />
               </span>
             </NavLink>
 
@@ -81,7 +81,7 @@ export default function Navbar(props) {
               className="container"
             >
               <span className="circleUnactive">
-                <img src={stockAnalyzer} />
+                <img src={stockAnalyzer} alt="stockAnalyzer" />
               </span>
             </NavLink>
 
@@ -91,7 +91,7 @@ export default function Navbar(props) {
               className="container"
             >
               <span className="circle">
-                <img src={calculatorOldMan} />
+                <img src={calculatorOldMan} alt="calculatorOldMan" />
               </span>
             </NavLink>
           </div>

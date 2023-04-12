@@ -1,4 +1,5 @@
 import React from "react";
+import Spinner from "react-bootstrap/Spinner";
 
 const StocksSkeletonGrid = () => {
   const skeletons = [
@@ -10,9 +11,7 @@ const StocksSkeletonGrid = () => {
         {skeletons.map((item) => (
           <div key={item} className="containerStocks">
             <h1>Loading...</h1>
-            <div className="spinner-border" role="status">
-              <span className="sr-only">Loading...</span>
-            </div>
+            <Spinner animation="border" />
           </div>
         ))}
       </div>

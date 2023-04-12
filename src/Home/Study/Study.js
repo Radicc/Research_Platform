@@ -1,6 +1,6 @@
 import "./Study.scss";
-import { useState, useRef } from "react";
-import Books from "./Books";
+import { useState } from "react";
+import Books from "./Books/Books.tsx";
 import Youtubers from "./Youtubers";
 import Websites from "./Websites";
 import BackSVG from "../images/backSVG.svg";
@@ -58,7 +58,7 @@ export default function Study(props) {
 
     setPropRef(Number(number));
 
-    if (levelRotation != "rotationLevelContainerRotation") {
+    if (levelRotation !== "rotationLevelContainerRotation") {
       setLevelRotation("rotationLevelContainerRotation");
     }
     if (Content === "content1" || Content === "content1_1") {
@@ -102,11 +102,11 @@ export default function Study(props) {
   //////////////// BOOKS, YOUTUBE, WEBSITES ////////////////////////
   //////////////////// BOOKS ////////////////////////
   const handleClick1 = () => {
-    if (menuRotation != "rotation") {
+    if (menuRotation !== "rotation") {
       props.setNavbarClass("header3");
     }
 
-    if (Content != "content1" && Content != "content2") {
+    if (Content !== "content1" && Content !== "content2") {
       setContent("content1");
     }
     if (levelMenu.Beginner === levelContainer) {
@@ -130,7 +130,7 @@ export default function Study(props) {
   const handleClick2 = () => {
     props.setNavbarClass("header2");
 
-    if (Content != "content1" && Content != "content2") {
+    if (Content !== "content1" && Content !== "content2") {
       setContent("content1");
     }
     if (Content === "content2") {
@@ -161,7 +161,7 @@ export default function Study(props) {
   //////////////////// WEBSITES ////////////////////////
   const handleClick3 = () => {
     props.setNavbarClass("header2");
-    if (Content != "content1" && Content != "content2") {
+    if (Content !== "content1" && Content !== "content2") {
       setContent("content1");
     }
     if (
@@ -209,6 +209,7 @@ export default function Study(props) {
         className={menuScale.BackSVG}
         src={BackSVG}
         onClick={handleBackButton}
+        alt="img"
       />
       <div className={menuRotation}>
         <button value="1" onClick={handleClick1} className={menuScale.Books}>
@@ -248,13 +249,13 @@ export default function Study(props) {
           </div>
 
           <div className={levelMenu.BeginnerElements}>
-            <Books props={propRef} />
+            <Books difficult={propRef} />
           </div>
           <div className={levelMenu.IntermediateElements}>
-            <Books props={propRef} />
+            <Books difficult={propRef} />
           </div>
           <div className={levelMenu.AdvancedElements}>
-            <Books props={propRef} />
+            <Books difficult={propRef} />
           </div>
         </div>
         <div className={menuScale.ContentYoutube}>

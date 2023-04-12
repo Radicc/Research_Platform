@@ -1,6 +1,6 @@
 import "./RetirmentCalculator.scss";
 import "./_calculateButton.scss";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import Button1 from "../Buttons/button1.tsx";
 
 export default function RetirmentCalculator(props) {
@@ -72,7 +72,7 @@ export default function RetirmentCalculator(props) {
       );
       number1 += AnnualSavings;
 
-      if (genState.IncreaseOfAnnualSavings != 0) {
+      if (genState.IncreaseOfAnnualSavings !== 0) {
         AnnualSavings += Math.round(
           Number(genState.IncreaseOfAnnualSavings / 100) * Number(AnnualSavings)
         );
@@ -88,7 +88,7 @@ export default function RetirmentCalculator(props) {
           Number(RetirmentIncome)
       );
 
-      if (i == genState.RetirementAge) {
+      if (i === genState.RetirementAge) {
         RetirmentIncomeStart = RetirmentIncome;
       }
     }

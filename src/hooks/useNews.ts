@@ -7,9 +7,6 @@ interface News {
   id: number;
 }
 
-const useNews = () =>
-  useData<News>("/list", {
-    params: { category: "generalnews", region: "US" },
-  });
+const useNews = () => useData<News>("/list");
 
 export default useNews;

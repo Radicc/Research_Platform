@@ -1,8 +1,6 @@
 import "./Youtube.scss";
 import { useState, useEffect } from "react";
 
-import EveryThingMoney from "../images/EveryThingMoney.jpg";
-import EveryThingMoneyBanner from "../images/EveryThingMoneyBanner.jpg";
 import SvenCarlin from "../images/SvenCarlin.jpg";
 import SvenCarlinBanner from "../images/SvenCarlinBanner.jpg";
 import NewMoney from "../images/NewMoney.jpg";
@@ -59,8 +57,12 @@ export default function Youtubers(props) {
           onClick={() => window.open(y[i].link, "_blank")}
           className="YoutubeComponent"
         >
-          <img className="profileIcon" src={y[i].img} />
-          <img className="profileBanner" src={y[i].banner} />
+          <img className="profileIcon" src={y[i].img} alt="profileIcon" />
+          <img
+            className="profileBanner"
+            src={y[i].banner}
+            alt="profileBanner"
+          />
         </div>
       );
     }
