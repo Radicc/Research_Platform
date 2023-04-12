@@ -1,6 +1,9 @@
-import "./Stocks.scss";
-import useNews from "../../hooks/useNews.ts";
 import React from "react";
+
+import "./Stocks.scss";
+
+import useNews from "../../hooks/useNews.ts";
+import StocksSkeletonGrid from "./StocksSkeletonGrid.tsx";
 
 interface Props {
   navbarClass: string;
@@ -19,6 +22,7 @@ const Stocks = ({ navbarClass, setNavbarClass }: Props) => {
   return (
     <div className="Stocks">
       <div className="containerSectionStocks">
+        {isLoading && <StocksSkeletonGrid />}
         {data.map((item) => (
           <div
             key={item.id}
