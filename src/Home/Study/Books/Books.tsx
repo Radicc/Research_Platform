@@ -1,6 +1,5 @@
 import React from "react";
 import "../Study.scss";
-import { useState } from "react";
 
 import Babylon from "../../images/The_Richest_Man_In_Babylon.jpg";
 import Psychology from "../../images/Psychology_of_Money.jpg";
@@ -17,6 +16,7 @@ interface Props {
 
 const booksInfo = [
   {
+    id: 1,
     img: Babylon,
     name: "The Richest Man in Babylon",
     author: "George S. Clason",
@@ -25,6 +25,7 @@ const booksInfo = [
     difficulty: 1,
   },
   {
+    id: 2,
     img: Psychology,
     name: "Psychology of money",
     author: "Morgan Housel",
@@ -33,6 +34,7 @@ const booksInfo = [
     difficulty: 1,
   },
   {
+    id: 3,
     img: OneUpOnWallStreet,
     name: "One Up On Wall Street",
     author: "Peter Lynch",
@@ -41,6 +43,7 @@ const booksInfo = [
     difficulty: 1,
   },
   {
+    id: 4,
     img: RicherWiser,
     name: "Richer Wiser Happier",
     author: "William Green",
@@ -49,6 +52,7 @@ const booksInfo = [
     difficulty: 2,
   },
   {
+    id: 5,
     img: GoodStocks,
     name: "Good Stocks Cheap",
     author: "Kenneth Jeffrey Marshall",
@@ -57,6 +61,7 @@ const booksInfo = [
     difficulty: 2,
   },
   {
+    id: 6,
     img: IntelligentInvestor,
     name: "The Intelligent Investor",
     author: "Benjamin Graham",
@@ -71,7 +76,7 @@ const Books = ({ difficult }: Props) => {
     <div>
       {booksInfo.map((item) =>
         difficult === item.difficulty ? (
-          <div className="BookComponent">
+          <div key={item.id} className="BookComponent">
             <h2>{item.name}</h2>
             <p>by {item.author}</p>
             <img src={item.img} alt={item.img} />

@@ -12,24 +12,28 @@ import ThePlainBagelBanner from "../../images/plain_bagel.jpg";
 
 const youtubers = [
   {
+    id: 1,
     img: SvenCarlin,
     banner: SvenCarlinBanner,
     name: "Sven Carlin, Ph.D.",
     link: "https://www.youtube.com/@Value-Investing",
   },
   {
+    id: 2,
     img: NewMoney,
     banner: NewMoneyBanner,
     name: "New Money",
     link: "https://www.youtube.com/@NewMoneyYouTube",
   },
   {
+    id: 3,
     img: LearnToInvest,
     banner: LearnToInvestBanner,
     name: "Learn to Invest",
     link: "https://www.youtube.com/@LearntoInvest",
   },
   {
+    id: 4,
     img: ThePlainBagelLogo,
     banner: ThePlainBagelBanner,
     name: "The Plain Bagel",
@@ -41,6 +45,7 @@ const Youtubers = () => {
     <>
       {youtubers.map((item) => (
         <div
+          key={item.id}
           onClick={() => window.open(item.link, "_blank")}
           className="YoutubeComponent"
         >
