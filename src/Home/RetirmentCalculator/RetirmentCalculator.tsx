@@ -52,7 +52,7 @@ const RetirmentCalculator = () => {
         />
       </div>
 
-      <div className="submitSolution">
+      <div id="result" className="submitSolution">
         <div className="solution">
           <Results defaultForm={newData} />
         </div>

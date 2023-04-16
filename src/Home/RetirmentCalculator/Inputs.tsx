@@ -10,75 +10,77 @@ const inputs = [
     title: "Age",
     schemaName: "Age",
     info: "",
-    placeholder: "0",
+    placeholder: "18",
   },
   {
     id: 2,
     title: "Retirement Age",
     schemaName: "RetirementAge",
     info: "",
-    placeholder: "0",
+    placeholder: "60",
   },
   {
     id: 3,
     title: "Current Savings",
     schemaName: "CurrentSavings",
     info: "",
-    placeholder: "0",
+    placeholder: "$10 000",
   },
   {
     id: 4,
     title: "Monthly Savings",
     schemaName: "MonthlySavings",
     info: "",
-    placeholder: "0",
+    placeholder: "$300",
   },
   {
     id: 5,
-    title: "% Increase of Annual Saving",
+    title: "(%) Increase of Annual Saving",
     schemaName: "IncreaseOfAnnualSaving",
     info: "",
-    placeholder: "0",
+    placeholder: "3% (at least as inflation)",
   },
   {
     id: 6,
-    title: "Annualized Returns",
+    title: "(%) Annualized Returns",
     schemaName: "AnnualizedReturns",
     info: "",
-    placeholder: "0",
+    placeholder: "10%",
   },
   {
     id: 7,
     title: "What Age Do You Expect To Live To?",
     schemaName: "ExpectToLive",
     info: "",
-    placeholder: "0",
+    placeholder: "90",
   },
   {
     id: 8,
-    title: "Inflation",
+    title: "(%) Inflation",
     schemaName: "Inflation",
     info: "",
-    placeholder: "0",
+    placeholder: "3%",
   },
   {
     id: 9,
     title: "Current Monthly Income ?",
     schemaName: "CurrentMonthlyIncome",
     info: "",
-    placeholder: "0",
+    placeholder: "$2 000",
   },
   {
     id: 10,
-    title: "Income in retirement (%)",
+    title: "(%) Income in retirement",
     schemaName: "IncomeInRetirement",
     info: "",
-    placeholder: "0",
+    placeholder: "100%",
   },
 ];
 
 const schema = z.object({
-  Age: z.number({ invalid_type_error: "Age is required" }).min(0),
+  Age: z
+    .number({ invalid_type_error: "Age is required" })
+    .min(0, { message: "Number must be positive" }),
   RetirementAge: z
     .number({ invalid_type_error: "Retirement Age is required" })
     .min(0, { message: "Number must be positive" }),
@@ -129,12 +131,12 @@ const Inputs = ({ onSubmit }: Props) => {
               {...register(input.schemaName as Path<ExpenseFormData>, {
                 valueAsNumber: true,
               })}
-              placeholder="0"
+              placeholder={input.placeholder}
               id="Age"
               type="number"
             />
             {errors[input.schemaName] && (
-              <p className="text-danger">{errors[input.schemaName].message}</p>
+              <p className="dangerText">{errors[input.schemaName].message}</p>
             )}
           </div>
         ))}

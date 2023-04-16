@@ -61,7 +61,13 @@
   grid-template-columns: 50% 50%;
   justify-content: center;
   align-items: center;
-  gap: 3vh;
+  gap: 4vh;
+  .dangerText {
+    position: absolute;
+    top: 7.5vh;
+    color: rgb(248, 93, 93);
+    left: 0.2vw;
+  }
   p {
     width: 100%;
     margin: 0;
@@ -72,10 +78,10 @@
   }
   input {
     position: relative;
+    cursor: auto;
     width: 12vw;
     height: 4vh;
-    cursor: auto;
-    padding-left: 1vw;
+    padding: 0.2vw 0 0.2vw 0.5vw;
     border: 0.2vw solid #ffd700;
     border-radius: 0.2vw;
     outline: none;
@@ -84,8 +90,8 @@
     text-shadow: 1.2px 1.2px #00000038;
     text-decoration: none;
     &::placeholder {
-      color: whitesmoke;
-      font-size: 0.8vw;
+      color: rgba(245, 245, 245, 0.384);
+      font-size: 0.7vw;
     }
   }
 }
@@ -104,7 +110,6 @@
   display: flex;
   flex-direction: column;
 
-  gap: 5vh;
   width: 30vw;
   height: auto;
   padding: 1vw;
@@ -117,7 +122,7 @@
   position: relative;
   flex-direction: column;
   display: flex;
-  gap: 5vh;
+  gap: 2vh;
 }
 .containerSolution {
   position: relative;
@@ -140,7 +145,7 @@
     color: rgb(0, 177, 0);
   }
   .colorRed {
-    color: rgb(177, 0, 0);
+    color: rgb(248, 93, 93);
   }
 }
 
@@ -195,11 +200,15 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: auto;
     justify-content: center;
     align-items: center;
-    gap: 2.5vh;
+    gap: 3vh;
+    .dangerText {
+      position: absolute;
+      top: 8.5vh;
+      color: rgb(248, 93, 93);
+      left: 0.2vw;
+    }
 
     p {
       width: 100%;
@@ -220,7 +229,6 @@
       text-shadow: 1.2px 1.2px #00000038;
       text-decoration: none;
       &::placeholder {
-        color: whitesmoke;
         font-size: 0.9rem;
       }
     }
@@ -269,12 +277,13 @@
       position: relative;
       color: #ffd700;
       font-size: 1.1rem;
-      width: 50%;
+      width: 60%;
     }
     p {
       position: relative;
       color: whitesmoke;
       font-size: 1.1rem;
+      width: 40%;
     }
     .colorGreen {
       color: rgb(0, 177, 0);
