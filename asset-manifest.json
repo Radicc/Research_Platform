@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Research_Platform/static/css/main.6080c56e.css",
-    "main.js": "/Research_Platform/static/js/main.ef5013c0.js",
+    "main.css": "/Research_Platform/static/css/main.a4b9533d.css",
+    "main.js": "/Research_Platform/static/js/main.a6bfcc85.js",
     "static/js/496.cae0a888.chunk.js": "/Research_Platform/static/js/496.cae0a888.chunk.js",
     "static/media/wallstreet_2_1.jpg": "/Research_Platform/static/media/wallstreet_2_1.958bc16c141de061a9e7.jpg",
     "static/media/wallstreet_5.jpg": "/Research_Platform/static/media/wallstreet_5.2587e65f90a80abae9d1.jpg",
@@ -28,12 +28,12 @@
     "static/media/heartSVG.png": "/Research_Platform/static/media/heartSVG.f0a6949edaab2c39b5ed.png",
     "static/media/backSVG.svg": "/Research_Platform/static/media/backSVG.e583dc785cfb22294cb2fe4e1d273782.svg",
     "index.html": "/Research_Platform/index.html",
-    "main.6080c56e.css.map": "/Research_Platform/static/css/main.6080c56e.css.map",
-    "main.ef5013c0.js.map": "/Research_Platform/static/js/main.ef5013c0.js.map",
+    "main.a4b9533d.css.map": "/Research_Platform/static/css/main.a4b9533d.css.map",
+    "main.a6bfcc85.js.map": "/Research_Platform/static/js/main.a6bfcc85.js.map",
     "496.cae0a888.chunk.js.map": "/Research_Platform/static/js/496.cae0a888.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6080c56e.css",
-    "static/js/main.ef5013c0.js"
+    "static/css/main.a4b9533d.css",
+    "static/js/main.a6bfcc85.js"
   ]
 }
