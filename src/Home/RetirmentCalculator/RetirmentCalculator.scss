@@ -28,17 +28,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: 5vh;
   gap: 1vw;
-  padding: 1vw;
-  width: 45%;
-  margin-left: 1vw;
-  border-radius: 2em;
+  padding: 1vw 2vw;
+  border-radius: 1.2vw;
   background-color: #4d5061f8;
   box-shadow: 0px 3px #ffd700;
   h1 {
     color: whitesmoke;
-    font-size: 3.5vw;
+    font-size: 3vw;
     margin: 0;
     padding: 0;
   }
@@ -50,25 +47,32 @@
   justify-content: center;
   align-items: center;
 }
-.inputContainer {
+.formBox {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.inputContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
   justify-content: center;
   align-items: center;
   gap: 3vh;
   p {
-    width: 70%;
+    width: 100%;
     margin: 0;
     padding: 0;
     font-size: 0.7vw;
     color: whitesmoke;
+    padding-left: 0.5vw;
   }
   input {
     position: relative;
-    width: 65%;
+    width: 12vw;
     height: 4vh;
     cursor: auto;
     padding-left: 1vw;
@@ -85,42 +89,6 @@
     }
   }
 }
-
-.inputContainer2 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 9vh;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5em;
-  p {
-    width: 50%;
-    margin: 0;
-    padding: 0;
-    font-size: 0.7vw;
-    color: whitesmoke;
-  }
-  input {
-    position: relative;
-    width: 50%;
-    height: 5vh;
-    cursor: auto;
-    padding-left: 1vw;
-    border: 3vw solid #ffd700;
-    border-radius: 3px;
-    outline: none;
-    background-color: #00000059;
-    color: #ffd700;
-    text-shadow: 1.3px 1.3px #00000038;
-    text-decoration: none;
-    &::placeholder {
-      color: whitesmoke;
-      font-size: 0.8vw;
-    }
-  }
-}
 .inputBlock {
   position: relative;
   display: flex;
@@ -129,10 +97,6 @@
   align-items: center;
   justify-content: center;
   gap: 0.5vw;
-}
-.buttonContainer {
-  position: relative;
-  height: 7vh;
 }
 
 .submitSolution {
@@ -161,13 +125,13 @@
   flex-direction: row;
   h2 {
     position: relative;
-    width: 50%;
+    width: 60%;
     color: #ffd700;
     font-size: 1.5vw;
   }
   p {
     position: relative;
-    width: 50%;
+    width: 40%;
     color: whitesmoke;
     font-size: 1.5vw;
     text-align: center;
@@ -217,14 +181,15 @@
       text-align: center;
     }
   }
-  .calculatorContainer {
+
+  .formBox {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 2.5vh;
+    gap: 2em;
+    margin-bottom: 1em;
   }
   .inputContainer {
     position: relative;
@@ -235,17 +200,16 @@
     justify-content: center;
     align-items: center;
     gap: 2.5vh;
+
     p {
-      width: 70%;
-      margin: 0;
-      padding: 0;
-      font-size: 0.8rem;
+      width: 100%;
+      font-size: 0.9rem;
       color: whitesmoke;
     }
     input {
       position: relative;
-      width: 70%;
-      height: 4vh;
+      width: 100%;
+      height: 5vh;
       cursor: auto;
       padding-left: 1vw;
       border: 3px solid #ffd700;
@@ -261,42 +225,6 @@
       }
     }
   }
-
-  .inputContainer2 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 5vh;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5em;
-    p {
-      width: 50%;
-      margin: 0;
-      padding: 0;
-      font-size: 0.8rem;
-      color: whitesmoke;
-    }
-    input {
-      position: relative;
-      width: 50%;
-      height: 5vh;
-      cursor: auto;
-      padding-left: 1vw;
-      border: 3px solid #ffd700;
-      border-radius: 3px;
-      outline: none;
-      background-color: #00000059;
-      color: #ffd700;
-      text-shadow: 1.3px 1.3px #00000038;
-      text-decoration: none;
-      &::placeholder {
-        color: whitesmoke;
-        font-size: 0.7rem;
-      }
-    }
-  }
   .inputBlock {
     position: relative;
     display: flex;
@@ -304,11 +232,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    gap: 0.5em;
-  }
-  .buttonContainer {
-    position: relative;
-    height: 7vh;
+    gap: 0.5vw;
   }
 
   .submitSolution {
@@ -329,9 +253,7 @@
   .solution {
     position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
     border-radius: 0.3em;
     background-color: #4d5061e0;
     box-shadow: 0px 3px #ffd700;
@@ -342,18 +264,17 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    gap: 0em;
+
     h2 {
       position: relative;
-      width: 50%;
       color: #ffd700;
-      font-size: 1rem;
+      font-size: 1.1rem;
+      width: 50%;
     }
     p {
       position: relative;
-      width: 50%;
       color: whitesmoke;
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
     .colorGreen {
       color: rgb(0, 177, 0);

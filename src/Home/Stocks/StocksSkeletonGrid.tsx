@@ -10,8 +10,7 @@ const StocksSkeletonGrid = () => {
       <div className="containerSectionStocks">
         {skeletons.map((item) => (
           <div key={item} className="containerStocks">
-            <h1>Loading...</h1>
-            <Spinner animation="border" />
+            <Spinner animation="border" variant="warning" />
           </div>
         ))}
       </div>

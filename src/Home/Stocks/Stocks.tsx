@@ -25,12 +25,12 @@ const Stocks = ({ navbarClass, setNavbarClass }: Props) => {
         {isLoading && <StocksSkeletonGrid />}
         {data.map((item) => (
           <div
-            key={item.id}
+            key={item.uuid}
             onClick={() => window.open(item.link, "_blank")}
             className="containerStocks"
           >
             <h1>{item.title}</h1>
-            <p>{item.summary}</p>
+            <p>{item.summary.substring(0, 520)}</p>
           </div>
         ))}
       </div>

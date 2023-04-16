@@ -4,7 +4,7 @@ interface News {
   title: string;
   link: string;
   summary: string;
-  id: number;
+  uuid: number;
 }
 
 const useNews = () => useData<News>("/list");

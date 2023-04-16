@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Stocks from "./Home/Stocks/Stocks.tsx";
 import Study from "./Home/Study/Study";
 import StocksAnalyzer from "./Home/StocksAnalyzer/StocksAnalyzer.tsx";
-import RetirmentCalculator from "./Home/RetirmentCalculator/RetirmentCalculator";
+import RetirmentCalculator from "./Home/RetirmentCalculator/RetirmentCalculator.tsx";
 import FirstSection from "./Home/FirstSection.js";
 import Navbar from "./Home/Navbar";
 import FavoriteStocks from "./Home/FavoriteStocks/FavoriteStocks.tsx";
