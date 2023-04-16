@@ -7,6 +7,7 @@ const Math = (data: Data) => {
   let NormalSaveCal = 0;
   let IncreaseOfAnnualSavingCal = data.IncreaseOfAnnualSaving / 100;
   let Inflation = data.Inflation / 100;
+  let SalaryRetirement = data.IncomeInRetirement / 100;
 
   let AnnualizedReturnsCal = data.AnnualizedReturns / 100;
 
@@ -48,6 +49,7 @@ const Math = (data: Data) => {
   for (let i = 0; i < yearsToRetireCal; i++) {
     RetirementIncome += RetirementIncome * Inflation;
   }
+  RetirementIncome = RetirementIncome * SalaryRetirement;
 
   BalancedEnd = LastYearCal;
   for (let i = RetirementAge; i < ExpectToLive; i++) {
