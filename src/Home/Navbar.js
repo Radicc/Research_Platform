@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./sass/_burgerMenu.scss";
 import "./sass/_navbar.scss";
+import { HamburgerIcon } from "@chakra-ui/icons";
 
 import stockAnalyzer from "./images/stock_analyzerWhite.png";
 import stocks from "./images/stock_news.png";
@@ -45,10 +46,7 @@ export default function Navbar(props) {
           <img className="iconSVG" src={homeSVG} alt="homeSVG" />
         </NavLink>
 
-        <div onClick={handleClick} id="nav-icon2" className={Burger}>
-          <span></span>
-          <span></span>
-          <span></span>
+        <div onClick={handleClick} id="nav-icon1" className={Burger}>
           <span></span>
           <span></span>
           <span></span>
