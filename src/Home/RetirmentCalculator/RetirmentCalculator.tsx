@@ -30,10 +30,14 @@ export interface NewData {
   Enough: string;
 }
 
-const RetirmentCalculator = () => {
+const RetirmentCalculator = (props) => {
   const [data, setData] = useState<Data>({} as Data);
   const [isSubmited, setSubmited] = useState(false);
   const [newData, setNewData] = useState<NewData>({} as NewData);
+
+  if (props.navbarClass === "header2") {
+    props.setNavbarClass("header3");
+  }
 
   if (isSubmited) {
     setNewData(Math(data));
