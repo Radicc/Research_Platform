@@ -2,7 +2,6 @@ Research Platform: https://radicc.github.io/Research_Platform/
 
 Free investment educative website for people that want to improve money management skills.
 ( This project is my educative project )
-![Alt text](/src/Home/images/wallstreetProject.jpg "Study resources")
 
 What can you find on the website?:
 
@@ -31,6 +30,4 @@ The calculator takes 10 inputs for calculation:
 ● Stock Analyzer - in progress
 ● Stock Metrics - in progress
 
-Tools
-
-- HTML, SCSS, JS, React
+# HTML, SCSS, JS, React
