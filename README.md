@@ -1,7 +1,8 @@
 Research Platform: https://radicc.github.io/Research_Platform/
 
-Free investment educative website for people that want to improve money management skills.
-( This project is my educative project )
+Welcome to our free educative investment platform! Our mission is to empower individuals to take control of their financial future by providing them with the knowledge and tools they need to make informed investment decisions. Our platform offers a wide range of educational resources, including books, youtube channels, websites, and retirement calculator all designed to help you learn the basics of investing and grow your wealth. With our user-friendly interface, you’ll be well on your way to achieving your financial goals.
+
+# HTML, SCSS, JS, React
 
 https://user-images.githubusercontent.com/81526908/232807335-c2cb77ca-84be-4c2e-a5de-0555d0516cc7.mp4
 
@@ -31,5 +32,3 @@ The calculator takes 10 inputs for calculation:
 
 ● Stock Analyzer - in progress
 ● Stock Metrics - in progress
-
-# HTML, SCSS, JS, React
