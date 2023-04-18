@@ -2,6 +2,11 @@ Research Platform: https://radicc.github.io/Research_Platform/
 
 Free investment educative website for people that want to improve money management skills.
 ( This project is my educative project )
+
+
+https://user-images.githubusercontent.com/81526908/232807335-c2cb77ca-84be-4c2e-a5de-0555d0516cc7.mp4
+
+
 ![Alt text](/src/Home/images/wallstreetProject.jpg "Study resources")
 
 What can you find on the website?:
