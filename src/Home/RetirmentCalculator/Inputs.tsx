@@ -2,6 +2,7 @@ import React from "react";
 import { Path, useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { QuestionIcon } from "@chakra-ui/icons";
 import "./_calculateButton.scss";
 
 const inputs = [
@@ -11,6 +12,7 @@ const inputs = [
     schemaName: "Age",
     info: "",
     placeholder: "18",
+    information: "Age when will you start investing.",
   },
   {
     id: 2,
@@ -18,6 +20,7 @@ const inputs = [
     schemaName: "RetirementAge",
     info: "",
     placeholder: "60",
+    information: "Age when will you stop investing.",
   },
   {
     id: 3,
@@ -25,6 +28,7 @@ const inputs = [
     schemaName: "CurrentSavings",
     info: "",
     placeholder: "$10 000",
+    information: "Savings that are going to be invested.",
   },
   {
     id: 4,
@@ -32,34 +36,42 @@ const inputs = [
     schemaName: "MonthlySavings",
     info: "",
     placeholder: "$300",
+    information: "Money that you want to invest monthly.",
   },
   {
     id: 5,
-    title: "(%) Increase of Annual Saving",
+    title: "Increase of Annual Savings",
     schemaName: "IncreaseOfAnnualSaving",
     info: "",
     placeholder: "3% (at least as inflation)",
+    information:
+      "Increase monthly savings every year. You want at least the same percentual as inflation to not lose money over time.",
   },
   {
     id: 6,
-    title: "(%) Annualized Returns",
+    title: "Annualized Returns",
     schemaName: "AnnualizedReturns",
     info: "",
     placeholder: "10%",
+    information:
+      "Annualized Returns mean how much money you will get from investing every year over XY years. Regular ETF SP500 had a 10% returns.",
   },
   {
     id: 7,
-    title: "What Age Do You Expect To Live To?",
+    title: "Expected age To Live To?",
     schemaName: "ExpectToLive",
     info: "",
     placeholder: "90",
+    information: "What age do you expect to live to.",
   },
   {
     id: 8,
-    title: "(%) Inflation",
+    title: "Inflation",
     schemaName: "Inflation",
     info: "",
     placeholder: "3%",
+    information:
+      "You can place here the average inflation that's 2.5% or you can increase it if you think that the low inflation environment is over.",
   },
   {
     id: 9,
@@ -67,13 +79,17 @@ const inputs = [
     schemaName: "CurrentMonthlyIncome",
     info: "",
     placeholder: "$2 000",
+    information:
+      "Your monthly salary. We calculate how much money you are going to get monthly in retirement.",
   },
   {
     id: 10,
-    title: "(%) Income in retirement",
+    title: "Income in retirement",
     schemaName: "IncomeInRetirement",
     info: "",
     placeholder: "100%",
+    information:
+      "How much money as salary will you get monthly from retirement. 100% means that you want to have the same standard of living as now. You can increase by over 100% to improve your standards or decrease by under 100% to lower your standards in retirement.",
   },
 ];
 
@@ -126,7 +142,16 @@ const Inputs = ({ onSubmit }: Props) => {
       <div className="inputContainer">
         {inputs.map((input) => (
           <div key={input.id} className="inputBlock">
-            <p>{input.title}</p>
+            <div className="HSstack">
+              <div className="InformationBlock">
+                <QuestionIcon
+                  boxSize={{ sm: "24px", md: "40px", lg: "56px" }}
+                  color="#A0AEC0"
+                />
+                <h5>{input.information}</h5>
+              </div>
+              <p>{input.title}</p>
+            </div>
             <input
               {...register(input.schemaName as Path<ExpenseFormData>, {
                 valueAsNumber: true,
