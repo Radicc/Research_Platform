@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/Research_Platform/static/css/main.768bb91d.css",
-    "main.js": "/Research_Platform/static/js/main.64f31314.js",
+    "main.css": "/Research_Platform/static/css/main.178548e1.css",
+    "main.js": "/Research_Platform/static/js/main.e66592d7.js",
     "static/js/496.cae0a888.chunk.js": "/Research_Platform/static/js/496.cae0a888.chunk.js",
     "static/media/wallstreet_2_1.jpg": "/Research_Platform/static/media/wallstreet_2_1.958bc16c141de061a9e7.jpg",
     "static/media/wallstreet_5.jpg": "/Research_Platform/static/media/wallstreet_5.2587e65f90a80abae9d1.jpg",
     "static/media/background2.jpg": "/Research_Platform/static/media/background2.088cb63cc481aa6fdb77.jpg",
-    "static/media/RetirementCalculator1.jpg": "/Research_Platform/static/media/RetirementCalculator1.48da029b783b18f2be49.jpg",
+    "static/media/RetirementCalculator1.jpg": "/Research_Platform/static/media/RetirementCalculator1.10b744a208d6f26683f7.jpg",
     "static/media/StockNewsSection.jpg": "/Research_Platform/static/media/StockNewsSection.b2b9b3b1e803f42f3bb2.jpg",
     "static/media/stock_news.png": "/Research_Platform/static/media/stock_news.ca24dc3fbb724de92896.png",
     "static/media/yahooBanner.jpg": "/Research_Platform/static/media/yahooBanner.73b039167083d922b8fb.jpg",
@@ -28,12 +28,12 @@
     "static/media/heartSVG.png": "/Research_Platform/static/media/heartSVG.f0a6949edaab2c39b5ed.png",
     "static/media/backSVG.svg": "/Research_Platform/static/media/backSVG.e583dc785cfb22294cb2fe4e1d273782.svg",
     "index.html": "/Research_Platform/index.html",
-    "main.768bb91d.css.map": "/Research_Platform/static/css/main.768bb91d.css.map",
-    "main.64f31314.js.map": "/Research_Platform/static/js/main.64f31314.js.map",
+    "main.178548e1.css.map": "/Research_Platform/static/css/main.178548e1.css.map",
+    "main.e66592d7.js.map": "/Research_Platform/static/js/main.e66592d7.js.map",
     "496.cae0a888.chunk.js.map": "/Research_Platform/static/js/496.cae0a888.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.768bb91d.css",
-    "static/js/main.64f31314.js"
+    "static/css/main.178548e1.css",
+    "static/js/main.e66592d7.js"
   ]
 }
