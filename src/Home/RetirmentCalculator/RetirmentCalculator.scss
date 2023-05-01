@@ -172,26 +172,16 @@
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
   .RetirmentCalculator {
-    position: relative;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: auto;
     height: auto;
     padding: 15vh 0;
     gap: 10vh;
-
     background-image: none;
   }
   .calculator {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     top: 0vh;
     margin: 0;
     padding: 0;
@@ -199,32 +189,19 @@
 
     width: 90%;
     border-radius: 1.2vh;
-    background-color: #4d5061f8;
-    box-shadow: 0px 3px #ffd700;
     h1 {
-      color: whitesmoke;
       font-size: 2rem;
       margin: 0.5em 0 0 0;
-      padding: 0;
       text-align: center;
     }
   }
 
   .formBox {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
     margin-bottom: 1em;
   }
   .inputContainer {
-    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 3vh;
     .dangerText {
       position: absolute;
@@ -256,24 +233,9 @@
       }
     }
   }
-  .inputBlock {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    gap: 0.5vw;
-  }
-
   .submitSolution {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-
     width: 90%;
     height: auto;
-    background-color: #4d506100;
-    box-shadow: 0px 0px #ffd700;
     border-radius: 1em;
     margin-bottom: 0vh;
     gap: 5vh;
@@ -281,37 +243,74 @@
     top: 0;
   }
   .solution {
-    position: relative;
-    display: flex;
     align-items: center;
     border-radius: 0.3em;
-    background-color: #4d5061e0;
-    box-shadow: 0px 3px #ffd700;
     padding: 1vh;
   }
   .containerSolution {
-    position: relative;
-    display: flex;
-    flex-direction: row;
     width: 100%;
 
     h2 {
-      position: relative;
-      color: #ffd700;
       font-size: 1.1rem;
-      width: 60%;
     }
     p {
-      position: relative;
-      color: whitesmoke;
       font-size: 1.1rem;
-      width: 40%;
     }
     .colorGreen {
       color: rgb(0, 177, 0);
     }
     .colorRed {
       color: rgb(177, 0, 0);
+    }
+  }
+}
+@media only screen and (min-device-width: 600px) and (max-device-width: 900px) {
+  .RetirmentCalculator {
+    flex-direction: column;
+  }
+  .calculator {
+    width: 75%;
+    border-radius: 1em;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .inputContainer {
+    gap: 2.5vh;
+    h5 {
+      font-size: 1.1em;
+    }
+    p {
+      font-size: 1rem;
+    }
+    input {
+      width: auto;
+      height: 3vh;
+      padding: 0.2vw 0 0.2vw 0.5vw;
+      border: 0.2em solid #ffd700;
+      border-radius: 0.2em;
+    }
+    input::placeholder {
+      font-size: 1rem;
+    }
+  }
+  .calculateButton {
+    font-size: 1.5rem;
+  }
+  .solution {
+    gap: 0;
+  }
+  .submitSolution {
+    width: 75vw;
+    box-shadow: 0px 3px #ffd700;
+    border-radius: 1em;
+  }
+  .containerSolution {
+    h2 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1.2rem;
     }
   }
 }

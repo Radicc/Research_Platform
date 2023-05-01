@@ -117,7 +117,7 @@
     scale: 1.03;
   }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
   .firstSection {
     position: relative;
     align-items: center;
@@ -148,5 +148,21 @@
   }
   .featureContainer {
     display: none;
+  }
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 900px) {
+  .titulContainer {
+    height: 50vh;
+    h1 {
+      font-size: 4vw;
+    }
+  }
+  .featureContainer {
+    flex-direction: column;
+  }
+  .contentFeatureContainer {
+    border-radius: 2vw;
+    width: 70vw;
   }
 }

@@ -73,7 +73,7 @@ const booksInfo = [
 
 const Books = ({ difficult }: Props) => {
   return (
-    <div>
+    <>
       {booksInfo.map((item) =>
         difficult === item.difficulty ? (
           <div key={item.id} className="BookComponent">
@@ -95,7 +95,7 @@ const Books = ({ difficult }: Props) => {
           ""
         )
       )}
-    </div>
+    </>
   );
 };
 

@@ -1,0 +1,241 @@
+.contentBooks {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  z-index: 2;
+
+  animation: opacityContent 0.8s ease forwards;
+}
+.rotationLevelContainer {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20em;
+  gap: 2em;
+  left: 50vw;
+  top: 33vh;
+}
+.rotationLevelContainerRotation {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  left: 50vw;
+  top: 30vh;
+  gap: 2em;
+
+  animation: rotationLevel 0.8s ease forwards;
+}
+@keyframes rotationLevel {
+  0% {
+    transform: rotate(0deg) translateX(0vw);
+  }
+  10% {
+    transform: rotate(0deg) translateX(0vw);
+  }
+  50% {
+    transform: rotate(90deg) translateX(0vw);
+  }
+  100% {
+    transform: translateX(20vw) rotate(90deg);
+  }
+}
+.BookSectionFast {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  width: 100%;
+
+  top: 16vh;
+  left: 0vw;
+  gap: 5em;
+  animation: var(--animation-Fast);
+}
+.BookSection {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  top: 16vh;
+  left: 0vw;
+  gap: 5em;
+  animation: var(--animation-First);
+}
+@keyframes BookSection {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.BookSectionNone {
+  display: none;
+}
+.BookComponent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  h2 {
+    font-size: 2.5vw;
+    text-align: center;
+  }
+  p {
+    font-size: 1vw;
+  }
+  img {
+    position: relative;
+    border-radius: 0.8vw;
+    filter: drop-shadow(10px 10px 5px rgb(0, 0, 0));
+  }
+}
+.amazonIcon {
+  cursor: pointer;
+}
+
+.levelContainer {
+  width: 30vw;
+  border: 5px solid whitesmoke;
+  cursor: pointer;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 3vw;
+  &:hover {
+    border: 5px solid #ffd700;
+    filter: drop-shadow(0 0 0.1rem #ffd700);
+    color: #ffd700;
+  }
+}
+.levelContainerNone {
+  width: 30vw;
+  border: 5px solid whitesmoke;
+  cursor: pointer;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 3vw;
+  animation: menuScale 0.4s ease forwards;
+  &:hover {
+    border: 5px solid #ffd700;
+    filter: drop-shadow(0 0 0.1rem #ffd700);
+    color: #ffd700;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 900px) {
+  .contentBooks {
+    flex-direction: column;
+    align-items: center;
+  }
+  .rotationLevelContainer {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0vh;
+    animation: ZeroScaleLevelContainerMobile 1.5s ease forwards;
+  }
+  @keyframes ZeroScaleLevelContainerMobile {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .rotationLevelContainerRotation {
+    position: relative;
+    left: 0vw;
+    margin: 4vh 0;
+    height: auto;
+    gap: 0;
+    animation: rotationLevelMobile 0.8s ease forwards;
+  }
+  @keyframes rotationLevelMobile {
+    0% {
+      top: 30vh;
+    }
+    100% {
+      top: 10vh;
+    }
+  }
+  .BookSectionFast {
+    justify-content: center;
+    top: 10vh;
+    animation: var(--animation-Fast);
+  }
+  .BookSection {
+    position: relative;
+    top: 10vh;
+    animation: var(--animation-First);
+    gap: 2em;
+  }
+  @keyframes BookSection {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .BookComponent {
+    gap: 1em;
+    h2 {
+      font-size: 8vw;
+      text-align: center;
+    }
+    p {
+      font-size: 4vw;
+      color: rgb(168, 168, 168);
+    }
+    img {
+      position: relative;
+      border-radius: 1vw;
+    }
+    border-bottom: 3px solid #ffd700;
+  }
+
+  .levelContainer {
+    width: 90vw;
+    font-size: 9vw;
+  }
+  .levelContainerNone {
+    width: auto;
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (min-device-width: 600px) and (max-device-width: 900px) {
+  .BookComponent {
+    width: 100%;
+  }
+  .amazonIcon {
+    width: 100px;
+  }
+  .levelContainer {
+    width: 70vw;
+    font-size: 8vw;
+  }
+  .levelContainerNone {
+    width: auto;
+    font-size: 4rem;
+  }
+}

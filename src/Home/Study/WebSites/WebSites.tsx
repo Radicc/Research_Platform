@@ -12,28 +12,28 @@ const websitesInfoObject = [
     banner: yahooFinanceBanner,
     name: "Yahoo Finance",
     link: "https://finance.yahoo.com/",
-    text: "Yahoo! Finance is a media property that is part of the Yahoo! network. It provides financial news, data and commentary including stock quotes, press releases, financial reports, and original content. It also offers some online tools for personal finance management.",
+    text: "Media property network that provides financial news, data and commentary.",
   },
   {
     id: 2,
     banner: tradingViewBanner,
     name: "TradingView",
     link: "https://www.tradingview.com/",
-    text: "Charting platform and social network used by 30M+ traders and investors worldwide to spot opportunities across global markets.",
+    text: "Charting platform and social network used traders and investors.",
   },
   {
     id: 3,
     banner: seekingAlphaBanner,
     name: "SeekingAlpha",
     link: "https://seekingalpha.com/",
-    text: "Seeking Alpha is a crowd-sourced content service for financial markets. Articles and research covers a broad range of stocks, asset classes, exchange-traded funds (ETFs), and investment strategies.",
+    text: "Crowd-sourced content service for financial markets. Articles and research covers a broad range of stocks, asset.",
   },
   {
     id: 4,
     banner: tikrBanner,
     name: "Tikr Terminal",
     link: "https://app.tikr.com/register?ref=v3xzcz",
-    text: "Invest like Wall Street with TIKR Terminal - Find the best stocks, follow top investors, quickly analyze businesses, and monitor your portfolio with TIKR.",
+    text: "Find the best stocks, follow top investors, quickly analyze businesses.",
   },
 ];
 
