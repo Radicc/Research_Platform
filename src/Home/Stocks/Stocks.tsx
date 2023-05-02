@@ -30,7 +30,7 @@ const Stocks = ({ navbarClass, setNavbarClass }: Props) => {
             className="containerStocks"
           >
             <h1>{item.title}</h1>
-            <p>{item.summary.substring(0, 520)}</p>
+            <p>{item.summary.substring(0, 200)}</p>
           </div>
         ))}
       </div>

@@ -162,7 +162,10 @@
     flex-direction: column;
   }
   .contentFeatureContainer {
-    border-radius: 2vw;
+    border-radius: 2em;
     width: 70vw;
+    img {
+      border-radius: 2em;
+    }
   }
 }

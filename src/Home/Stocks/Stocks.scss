@@ -89,7 +89,7 @@
     opacity: 1;
   }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
   .Stocks {
     h1 {
       font-size: 4vw;
@@ -135,5 +135,21 @@
     box-shadow: 0px 3px #ffd700;
     text-align: center;
     z-index: 0;
+  }
+}
+@media only screen and (min-device-width: 600px) and (max-device-width: 900px) {
+  .containerSectionStocks {
+    grid-template-columns: 50% 50%;
+  }
+  .containerStocks {
+    width: auto;
+    height: 25vh;
+    border-radius: 1.5em;
+    h1 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
   }
 }
