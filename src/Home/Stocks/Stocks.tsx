@@ -18,7 +18,6 @@ const Stocks = ({ navbarClass, setNavbarClass }: Props) => {
   if (navbarClass === "header2") {
     setNavbarClass("header3");
   }
-
   return (
     <div className="Stocks">
       <div className="containerSectionStocks">

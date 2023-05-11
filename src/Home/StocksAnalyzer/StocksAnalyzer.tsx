@@ -1,37 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./StocksAnalyzer.scss";
+import StocksAnalyzerSearch from "./StocksAnalyzerSearch.tsx";
+import StocksAnlyzerGrid from "./StocksAnlyzerGrid.tsx";
+
+export interface REFF {
+  searchText: string | null;
+  shortName: string | null;
+}
 
 const StocksAnalyzer = () => {
+  const [stockQuery, setStockQuery] = useState<REFF>({} as REFF);
   return (
     <div className="StocksAnalyzer">
-      <h1>StocksAnalyzer</h1>
-      <input placeholder="Search for stocks" />
-      <div className="container">
-        <div className="data">
-          <h1>Years</h1>
-        </div>
-        <div className="data">
-          <h1>Revenue growth</h1>
-        </div>
-        <div className="data">
-          <h1>Net Income</h1>
-        </div>
-        <div className="data">
-          <h1>Total Assets</h1>
-        </div>
-        <div className="data">
-          <h1>Total Liabilities</h1>
-        </div>
-        <div className="data">
-          <h1>Total Equity</h1>
-        </div>
-        <div className="data">
-          <h1>Free Cash FLow</h1>
-        </div>
-        <div className="data">
-          <h1>Shares Outstanding</h1>
-        </div>
-      </div>
+      <StocksAnalyzerSearch
+        onSearch={(searchText) => setStockQuery({ ...stockQuery, searchText })}
+      />
+      <StocksAnlyzerGrid stockQuery={stockQuery} />
     </div>
   );
 };
