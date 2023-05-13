@@ -18,6 +18,9 @@ const StocksAnlyzerGrid = ({ stockQuery }: Props) => {
         data.map((item) => (
           <div key={"1"} className="gridContainer">
             <h2 className="companyName">{item.quoteType.shortName}</h2>
+            <p className="companySummary">
+              {item.summaryProfile.longBusinessSummary}
+            </p>
             <div className="pillersContainer">
               <div className="pillersBox">
                 <h1>Current Price</h1>
@@ -64,15 +67,8 @@ const StocksAnlyzerGrid = ({ stockQuery }: Props) => {
                 </p>
               </div>
             </div>
-          </div>
-        ))}
-    </>
-  );
-};
 
-export default StocksAnlyzerGrid;
-
-/* <div className="dataContainer">
+            <div className="dataContainer">
               <div className="dataYears">
                 <h1>Years</h1>
                 <div className="years">
@@ -80,21 +76,17 @@ export default StocksAnlyzerGrid;
                   <p>2021</p>
                   <p>2020</p>
                   <p>2019</p>
-                  <p>2018</p>
                 </div>
               </div>
 
               <div className="data">
                 <h1>Revenue growth</h1>
-                <p>0</p>
-                <p>0</p>
-                <p>0</p>
-                <p>0</p>
-                <p>0</p>
+                {item.earnings.financialsChart.yearly
+                  .map((data) => <p key={data.date}>{data.revenue.fmt}</p>)
+                  .reverse()}
               </div>
               <div className="data">
                 <h1>Net Income</h1>
-                <p>0</p>
                 <p>0</p>
                 <p>0</p>
                 <p>0</p>
@@ -106,11 +98,9 @@ export default StocksAnlyzerGrid;
                 <p>0</p>
                 <p>0</p>
                 <p>0</p>
-                <p>0</p>
               </div>
               <div className="data">
                 <h1>Total Liabilities</h1>
-                <p>0</p>
                 <p>0</p>
                 <p>0</p>
                 <p>0</p>
@@ -122,7 +112,6 @@ export default StocksAnlyzerGrid;
                 <p>0</p>
                 <p>0</p>
                 <p>0</p>
-                <p>0</p>
               </div>
               <div className="data">
                 <h1>Shares Outstanding</h1>
@@ -130,6 +119,12 @@ export default StocksAnlyzerGrid;
                 <p>0</p>
                 <p>0</p>
                 <p>0</p>
-                <p>0</p>
               </div>
-            </div> */
+            </div>
+          </div>
+        ))}
+    </>
+  );
+};
+
+export default StocksAnlyzerGrid;
