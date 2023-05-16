@@ -14,10 +14,12 @@
 }
 .searchContainer {
   position: relative;
+  display: block;
   width: 100%;
   max-height: 420px;
   overflow-y: scroll;
 }
+
 .searchValueDataContainer {
   position: relative;
   display: flex;

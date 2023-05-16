@@ -8,7 +8,6 @@ interface Props {
 
 const StocksAnlyzerGrid = ({ stockQuery }: Props) => {
   const { data, error, isLoading } = useStockAnalyzer(stockQuery);
-  console.log(data);
 
   if (error) return <p className="errorMassage">Wrong Stock Ticker!</p>;
   return (

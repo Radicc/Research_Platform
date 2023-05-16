@@ -6,14 +6,15 @@ interface Props {
   onSearch: (searchText: string) => void;
 }
 const StocksAnalyzerSearch = ({ onSearch }: Props) => {
-  const ref = useRef<HTMLInputElement>(null);
-  const [isValue, setValue] = useState("");
+  //const [isRef, setRef] = useState(null);
+  const [isValue, setValue] = useState<string | null>(null);
   const onChange = (e: string) => {
     setValue(e);
-    console.log(e);
+    console.log(isValue);
   };
   const search = (e: string) => {
-    onSearch(isValue.toUpperCase());
+    setValue(e);
+    onSearch(e.toUpperCase());
   };
   return (
     <>
@@ -24,12 +25,12 @@ const StocksAnalyzerSearch = ({ onSearch }: Props) => {
         className="searchForm"
         onSubmit={(event) => {
           event.preventDefault();
-          if (ref.current) onSearch(ref.current.value.toUpperCase());
+          if (isValue) onSearch(isValue.toUpperCase());
         }}
       >
         <input
           placeholder="Enter Stock Ticker"
-          ref={ref}
+          value={isValue || ""}
           onChange={(e) => onChange(e.target.value)}
         />
         <div className="searchContainer">
@@ -41,13 +42,14 @@ const StocksAnalyzerSearch = ({ onSearch }: Props) => {
                 const stockTicker = item.ticker.toLowerCase();
                 return (
                   (searchTerm.length && stockName.startsWith(searchTerm)) ||
-                  stockTicker.startsWith(searchTerm)
+                  (stockTicker.startsWith(searchTerm) &&
+                    stockTicker !== searchTerm)
                 );
               })
               .map((item) => (
                 <div
                   onClick={() => search(item.ticker)}
-                  key={item.ticker}
+                  key={item.id}
                   className="searchValueDataContainer"
                 >
                   <p className="companyNameSearch">{item.name}</p>
