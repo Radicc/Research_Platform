@@ -10,6 +10,10 @@ const StocksAnalyzerSearch = ({ onSearch }: Props) => {
   const [isValue, setValue] = useState("");
   const onChange = (e: string) => {
     setValue(e);
+    console.log(e);
+  };
+  const search = (e: string) => {
+    onSearch(isValue.toUpperCase());
   };
   return (
     <>
@@ -41,7 +45,11 @@ const StocksAnalyzerSearch = ({ onSearch }: Props) => {
                 );
               })
               .map((item) => (
-                <div className="searchValueDataContainer">
+                <div
+                  onClick={() => search(item.ticker)}
+                  key={item.ticker}
+                  className="searchValueDataContainer"
+                >
                   <p className="companyNameSearch">{item.name}</p>
                   <p className="companyTickerSearch">{item.ticker}</p>
                 </div>

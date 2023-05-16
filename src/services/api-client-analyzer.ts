@@ -4,7 +4,7 @@ export default axios.create({
   method: "GET",
   baseURL: "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2",
   headers: {
-    "X-RapidAPI-Key": "ec93c127acmsh87a505023594f89p1f9a2bjsn5dd21ed35501",
+    "X-RapidAPI-Key": "9a2cfd44c1msh9b748c8d1b65599p1c7303jsn354475d31f41",
     "X-RapidAPI-Host": "apidojo-yahoo-finance-v1.p.rapidapi.com",
   },
 });
