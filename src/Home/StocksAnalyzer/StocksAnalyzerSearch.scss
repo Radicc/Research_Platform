@@ -1,0 +1,47 @@
+.searchForm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  input {
+    width: 620px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0 20px;
+    color: black;
+  }
+}
+.searchContainer {
+  position: relative;
+  width: 100%;
+  max-height: 420px;
+  overflow-y: scroll;
+}
+.searchValueDataContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+
+  width: 600px;
+  margin: 2px;
+  padding: 5px 20px;
+
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.788);
+  .companyTickerSearch {
+    text-align: center;
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  .companyNameSearch {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}

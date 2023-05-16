@@ -12,11 +12,8 @@
     margin: 0;
     padding: 0;
   }
-  input {
-    width: 600px;
-    height: 50px;
-    border-radius: 20px;
-    padding: 0 20px;
+  h2 {
+    color: #ffd700;
   }
 }
 .errorMassage {
@@ -36,6 +33,7 @@
   padding: 0.5em 0 0 0;
   color: #ffd700;
   text-shadow: 1.5px 1.5px #000000;
+  text-align: center;
 }
 .companySummary {
   width: 80%;

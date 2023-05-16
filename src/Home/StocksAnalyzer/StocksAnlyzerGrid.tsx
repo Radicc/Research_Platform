@@ -10,7 +10,7 @@ const StocksAnlyzerGrid = ({ stockQuery }: Props) => {
   const { data, error, isLoading } = useStockAnalyzer(stockQuery);
   console.log(data);
 
-  if (error) return <p className="errorMassage">Wrong Stock Symbol</p>;
+  if (error) return <p className="errorMassage">Wrong Stock Ticker!</p>;
   return (
     <>
       {data &&
@@ -86,39 +86,10 @@ const StocksAnlyzerGrid = ({ stockQuery }: Props) => {
                   .reverse()}
               </div>
               <div className="data">
-                <h1>Net Income</h1>
-                <p>0</p>
-                <p>0</p>
-                <p>0</p>
-                <p>0</p>
-              </div>
-              <div className="data">
-                <h1>Total Assets</h1>
-                <p>0</p>
-                <p>0</p>
-                <p>0</p>
-                <p>0</p>
-              </div>
-              <div className="data">
-                <h1>Total Liabilities</h1>
-                <p>0</p>
-                <p>0</p>
-                <p>0</p>
-                <p>0</p>
-              </div>
-              <div className="data">
-                <h1>Free Cash FLow</h1>
-                <p>0</p>
-                <p>0</p>
-                <p>0</p>
-                <p>0</p>
-              </div>
-              <div className="data">
-                <h1>Shares Outstanding</h1>
-                <p>0</p>
-                <p>0</p>
-                <p>0</p>
-                <p>0</p>
+                <h1>Earnings growth</h1>
+                {item.earnings.financialsChart.yearly
+                  .map((data) => <p key={data.date}>{data.earnings.fmt}</p>)
+                  .reverse()}
               </div>
             </div>
           </div>
