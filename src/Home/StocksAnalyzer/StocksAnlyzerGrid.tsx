@@ -1,6 +1,7 @@
 import React from "react";
 import useStockAnalyzer from "../../hooks/useStockAnalyzer.ts";
 import { REFF } from "./StocksAnalyzer.tsx";
+import StocksAnalyzerGridSkeleton from "./StocksAnalyzerGridSkeleton.tsx";
 
 interface Props {
   stockQuery: REFF;
@@ -8,10 +9,12 @@ interface Props {
 
 const StocksAnlyzerGrid = ({ stockQuery }: Props) => {
   const { data, error, isLoading } = useStockAnalyzer(stockQuery);
+  console.log(data);
 
   if (error) return <p className="errorMassage">Wrong Stock Ticker!</p>;
   return (
     <>
+      {isLoading && <StocksAnalyzerGridSkeleton />}
       {data &&
         !isLoading &&
         data.map((item) => (

@@ -15,7 +15,7 @@ const StocksAnalyzer = () => {
       <StocksAnalyzerSearch
         onSearch={(searchText) => setStockQuery({ ...stockQuery, searchText })}
       />
-      <StocksAnlyzerGrid stockQuery={stockQuery} />
+      {stockQuery.searchText && <StocksAnlyzerGrid stockQuery={stockQuery} />}
     </div>
   );
 };
